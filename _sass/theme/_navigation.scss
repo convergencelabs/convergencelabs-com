@@ -19,12 +19,21 @@
 
       img {
         height: 35px;
+        display: inline;
+        margin-right: 5px;
+      }
+
+      span {
+        color: white;
+        position: relative;
+        top: 3px;
       }
     }
   }
 
   .navbar-nav {
     margin-top: 12px;
+    float: right;
 
     li {
 
@@ -409,134 +418,36 @@
     // .dropdown
   }
   // .navbar-nav
-}
 
-// .navbar
+  &.navbar-trans-dark {
+    .navbar-nav {
+      li {
+        a {
+          color: $white;
 
-/* ---- Navbar Inverse (Dark) ---- */
-.navbar-inverse {
-  border-bottom: 1px solid $navbar-inverse-border-color;
-  background: $navbar-inverse-background;
-
-  .navbar-nav {
-
-    li {
-
-      a {
-        color: $nav-inverse-links-color;
-
-        &:hover {
-          color: $nav-inverse-links-color-hover;
-        }
-      }
-    }
-
-    .active {
-
-      a {
-        color: $nav-inverse-link-active-color;
-      }
-    }
-
-    .dropdown {
-
-      .dropdown-menu {
-        background: $dropdown-inverse-background;
-        border-color: $navbar-inverse-border-color;
-
-        li {
-
-          a {
-
-            &:hover {
-              background: $dropdown-inverse-link-background;
-              border-left: $dropdown-inverse-link-left-border;
-            }
-          }
-        }
-
-        .dropdown-header {
-          color: $dropdown-inverse-header-color;
-        }
-
-        .divider {
-          background-color: $dropdown-inverse-divider-color;
-        }
-
-        .bg-solid {
-          background: $bg-solid-black;
-        }
-      }
-      // .dropdown-menu
-
-      .cart-dropdown {
-
-        .cart-item {
-
-          .cart-remove-btn {
-
-            &:hover {
-              color: $light;
-            }
-          }
-        }
-
-        .item-totals {
-          color: $light;
-        }
-      }
-
-      .search-dropdown {
-
-        li {
-
-          form {
-
-            input[type="search"] {
-
-              &:focus {
-                border-color: $nav-inverse-searh-border-color;
-              }
-            }
+          &:focus,
+          &:hover {
+            color: $white !important;
           }
         }
       }
-      // .search-dropdown
+
+      .active {
+        a {
+          color: $white !important;
+          &:hover {
+            color: $white !important;
+          }
+        }
+      }
+
+      .open {
+        .dropdown-toggle {
+          color: $white !important;
+        }
+      }
     }
-    // .dropdown
   }
-  // .navbar-nav
-}
-
-// .navbar-inverse
-
-/* ---- Mega Menu ---- */
-.mega {
-
-  .nav,
-  .collapse,
-  .dropup,
-  .dropdown {
-    position: static;
-  }
-
-  .container {
-    position: relative;
-  }
-
-  .dropdown-menu {
-    left: auto;
-  }
-
-  .mega-content {
-    padding: 20px 30px;
-  }
-
-  .dropdown.mega-fw .dropdown-menu {
-    left: 0;
-    right: 0;
-  }
-
 }
 
 /* ---- Navbar Utility ---- */
@@ -554,94 +465,6 @@
   }
 }
 
-.navbar-trans:not(.navbar-inverse) {
-
-  .navbar-nav {
-
-    li {
-
-      a {
-
-        &:focus,
-        &:hover {
-          color: $light;
-        }
-      }
-    }
-
-    .active {
-
-      a {
-        color: $light;
-
-        &:hover {
-          color: $light;
-        }
-      }
-    }
-
-    .dropdown {
-
-      .dropdown-menu {
-
-        li {
-
-          a {
-
-            &:hover {
-              color: $dark;
-            }
-          }
-        }
-      }
-    }
-
-    .open {
-
-      .dropdown-toggle {
-        color: $light;
-      }
-    }
-  }
-  // .navbvar-nav
-}
-
-// .navbar-trans:not
-
-.navbar-trans-dark {
-
-  .navbar-nav {
-
-    > li {
-
-      > a {
-
-        &:focus,
-        &:hover {
-          color: $dark !important;
-        }
-      }
-    }
-
-    .active {
-
-      > a {
-        color: $dark !important;
-
-        &:hover {
-          color: $dark !important;
-        }
-      }
-    }
-
-    .open {
-
-      .dropdown-toggle {
-        color: $dark !important;
-      }
-    }
-  }
-}
 
 .navbar-small {
   min-height: 50px;
@@ -658,8 +481,31 @@
   .navbar-nav {
     margin-top: 0;
 
-    .dropdown {
+     li {
+       a {
+        &:focus,
+        &:hover {
+          color: $gray-light !important;
+        }
+      }
+    }
 
+    .active {
+       a {
+        color: $gray-light !important;
+        &:hover {
+          color: $gray-light !important;
+        }
+      }
+    }
+
+    .open {
+      .dropdown-toggle {
+        color: $gray-light !important;
+      }
+    }
+
+    .dropdown {
       .dropdown-menu {
         margin-top: 0;
       }
