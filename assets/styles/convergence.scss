@@ -2,3 +2,27 @@
 ---
 
 @import "theme/main.scss";
+
+
+#services {
+  .ft-item {
+    color: white;
+    background: #2d3f63;
+
+    span, h4, a, p {
+      color: white;
+    }
+  }
+}
+
+#welcome {
+  header.sec-heading {
+    margin-bottom: 50px;
+  }
+}
+
+#process {
+  .ft-steps-numbers .ft-item .ft-nbr {
+    color: rgba(29, 87, 125, 0.44)
+  }
+}

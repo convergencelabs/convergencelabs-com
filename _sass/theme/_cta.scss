@@ -6,7 +6,11 @@
 
 /* ---- 17.1 CTA - Link ---- */
 .cta-link {
-	background: url(../../assets/images/shattered.gif) repeat;
+	background: url(/assets/images/network-connection.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	
 	.bg-overlay {
 		width: 100%;
