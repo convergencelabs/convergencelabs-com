@@ -39,14 +39,14 @@
   // Initialize functions after elements are loaded.
   $(window).load(function () {
 
-    // Preloader
-    $('.preloader img').fadeOut(); // will first fade out the loading animation
-    $('.preloader').delay(350).fadeOut('slow', function () {
-
-    });
-
-    initPortfolio();
-    initBlogMasonry();
+    // // Preloader
+    // $('.preloader img').fadeOut(); // will first fade out the loading animation
+    // $('.preloader').delay(350).fadeOut('slow', function () {
+    //
+    // });
+    //
+    // initPortfolio();
+    // initBlogMasonry();
 
   });
 
