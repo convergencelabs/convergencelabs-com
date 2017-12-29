@@ -240,13 +240,12 @@ permalink: /
         <span class="subheading">Our Thoughts and Trends in Developing Collaborative Apps</span>
       </header>
 
-
-      <!-- Blog Post 1 -->
+      {% for post in site.posts limit:3 %}
       <div class="col-lg-4 col-md-6 mb-sm-50">
         <div class="blog-post wow fadeIn" data-wow-duration="2s">
 
           <!-- Image -->
-          <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
+          <a href="{{ post.url }}" class="post-img"><img src="{{post.featured_image}}" alt="{{post.title}}"></a>
 
           <div class="bp-content">
 
@@ -254,7 +253,7 @@ permalink: /
             <div class="post-meta">
               <a href="#" class="post-date">
                 <i class="fa fa-calendar-o"></i>
-                <span>August 01.2015</span>
+                <span>{{ post.date | date: "%B %d, %Y" }}</span>
               </a>
               <a href="#" class="post-comments">
                 <i class="fa fa-comments-o"></i>
@@ -263,90 +262,19 @@ permalink: /
             </div><!-- / .meta -->
 
             <!-- Post Title -->
-            <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
+            <a href="{{ post.url }}" class="post-title"><h4>{{post.title}}</h4></a>
 
             <!-- Blurb -->
-            <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
+            {{ post.excerpt }}
 
             <!-- Link -->
-            <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
+            <a href="{{ post.url }}" class="btn btn-small">Read More</a>
 
           </div><!-- / .bp-content -->
 
         </div><!-- / .blog-post -->
       </div><!-- / .col-lg-4 -->
-
-
-      <!-- Blog Post 2 -->
-      <div class="col-lg-4 col-md-6 mb-sm-50">
-        <div class="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">
-
-          <!-- Image -->
-          <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
-
-          <div class="bp-content">
-
-            <!-- Meta data -->
-            <div class="post-meta">
-              <a href="#" class="post-date">
-                <i class="fa fa-calendar-o"></i>
-                <span>August 01.2015</span>
-              </a>
-              <a href="#" class="post-comments">
-                <i class="fa fa-comments-o"></i>
-                <span>12</span>
-              </a>
-            </div><!-- / .meta -->
-
-            <!-- Post Title -->
-            <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
-
-            <!-- Blurb -->
-            <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
-
-            <!-- Link -->
-            <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
-
-          </div><!-- / .bp-content -->
-
-        </div><!-- / .blog-post -->
-      </div><!-- / .col-lg-4 -->
-
-
-      <!-- Blog Post 3 -->
-      <div class="col-lg-4 col-md-6">
-        <div class="blog-post wow fadeIn" data-wow-duration="2s" data-wow-delay=".6s">
-
-          <!-- Image -->
-          <a href="pages/blog/blog-post.html" class="post-img"><img src="http://placehold.it/990x715" alt="Blog Post 1"></a>
-
-          <div class="bp-content">
-
-            <!-- Meta data -->
-            <div class="post-meta">
-              <a href="#" class="post-date">
-                <i class="fa fa-calendar-o"></i>
-                <span>August 01.2015</span>
-              </a>
-              <a href="#" class="post-comments">
-                <i class="fa fa-comments-o"></i>
-                <span>12</span>
-              </a>
-            </div><!-- / .meta -->
-
-            <!-- Post Title -->
-            <a href="pages/blog/blog-post.html" class="post-title"><h4>Blog Post Title</h4></a>
-
-            <!-- Blurb -->
-            <p>Lorem ipsum dolor sit amet, tempor consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad ...</p>
-
-            <!-- Link -->
-            <a href="pages/blog/blog-post.html" class="btn btn-small">Read More</a>
-
-          </div><!-- / .bp-content -->
-
-        </div><!-- / .blog-post -->
-      </div><!-- / .col-lg-4 -->
+      {% endfor %}
     </div><!-- / .row -->
   </section><!-- / .container -->
 </div><!-- / .gray-bg -->

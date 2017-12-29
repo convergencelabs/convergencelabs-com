@@ -1,0 +1,90 @@
+---
+layout: default
+---
+{% include post-header.html %}
+
+<!-- ========== Single Blog Post ========== -->
+
+<div id="blog" class="section container blog-classic">
+  <div class="row">
+    <div class="col-md-8 mb-sm-160">
+
+      <!-- Blog Post -->
+      <div class="col-md-12 blog-post-single wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s">
+
+        <!-- Image -->
+        <img class="img-responsive post-img" src="{{page.featured_image}}" alt="{{page.title}}">
+
+        <!-- Meta data -->
+        <div class="post-meta">
+          <a href="#" class="post-date">
+            <i class="fa fa-calendar-o"></i>
+            <span>{{ page.date | date: "%B %d, %Y" }}</span>
+          </a>
+        </div><!-- / .meta -->
+
+        <!-- Title -->
+        <h2 class="post-title">{{page.title}}</h2>
+
+        <div class="blog-post-content">
+          {{ content }}
+        </div>
+
+      </div><!-- / .blog-post-single -->
+
+      <!-- Post Navigation -->
+      <div class="row">
+        <nav class="blog-post-nav">
+          {% if page.previous.url %}
+          <a href="{{page.previous.url}}" class="prev-btn">Prev post</a>
+          {% endif %}
+          {% if page.next.url %}
+          <a href="{{page.next.url}}" class="next-btn">Next post</a>
+          {% endif %}
+        </nav>
+      </div>
+
+    </div><!-- / .col-md-8 -->
+
+
+    <!-- ========== Sidebar ========== -->
+    <aside class="col-md-offset-1 col-md-3 sidebar">
+
+      <!-- Search - Widget -->
+      <div class="col-md-12 ws-s search-widget">
+        <div class="form-group">
+          <input type="search" placeholder="Search ..." class="form-control">
+          <button class="inside-input-btn"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+
+      <!-- Tags - Widget -->
+      <div class="col-md-12 ws-s tags-widget">
+        <h5 class="header-widget">Categories</h5>
+        <ul class="tag-list">
+          {% for category in page.categories %}
+          <li><a href="#">{{category}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+
+      <!-- Recent Posts - Widget -->
+      <div class="col-md-12 ws-s recent-posts-widget">
+        <h5 class="header-widget">Recent Posts</h5>
+        {% for post in site.posts limit:3 %}
+        <div class="widget-item">
+          <a href="{{ post.url }}"><h6 class="h-alt">{{post.title}}</h6></a>
+          <a href="{{ post.url }}" class="post-date">
+            <i class="fa fa-calendar-o"></i>
+            <span>{{ post.date | date: "%B %d, %Y" }}</span>
+          </a>
+        </div>
+        {% endfor %}
+      </div><!-- / .recent-posts-widget -->
+
+    </aside><!-- / .sidebar -->
+
+  </div><!-- / .row -->
+</div><!-- / .container -->

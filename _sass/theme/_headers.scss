@@ -48,6 +48,7 @@
 
 	h1 {
 		margin: 0;
+		margin-top: 20px;
 	}
 	
 	.subheading {
@@ -133,7 +134,7 @@
 
 /* ---- 4.5 Header/Page Title Parallax ---- */
 .pt-plax-md-dark {
-	background: url(http://placehold.it/2440x1280);
+	background: url(/assets/images/short-header-bg.jpg);
 	background-size: cover;
 	background-position: 50%;
 
@@ -149,7 +150,7 @@
 }
 
 .pt-plax-md-light {
-	background: url(http://placehold.it/2440x1280);
+	background: url(/assets/images/short-header-bg.jpg);
 	background-size: cover;
 
 	&:before {
@@ -179,7 +180,7 @@
 }
 
 .pt-plax-lg-light {
-	background: url(http://placehold.it/2440x1280);
+	background: url(/assets/images/short-header-bg.jpg);
 	background-size: cover;
 
 	&:before {
