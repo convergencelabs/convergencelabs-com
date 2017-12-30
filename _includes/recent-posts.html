@@ -1,0 +1,11 @@
+<!-- ========== Recent Posts ========== -->
+<h5 class="header-widget">Recent Posts</h5>
+{% for post in site.posts limit:3 %}
+<div class="widget-item">
+  <a href="{{ post.url }}"><h6 class="h-alt">{{post.title}}</h6></a>
+  <a href="{{ post.url }}" class="post-date">
+    <i class="fa fa-calendar-o"></i>
+    <span>{{ post.date | date: "%B %d, %Y" }}</span>
+  </a>
+</div>
+{% endfor %}

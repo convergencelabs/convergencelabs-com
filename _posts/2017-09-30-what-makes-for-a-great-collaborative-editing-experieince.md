@@ -4,6 +4,7 @@ title:  "What Makes for a Great Collaborative Editing Experience?"
 date:   2017-09-30 15:09:21 -0700
 categories: ux editing
 featured_image: /assets/images/blog/laptop-typing.jpg
+author: Alec LaLonde
 excerpt_separator: <!--excerpt-->
 ---
 We have built a lot of collaborative apps over the years, and with the modest goal of making collaborative apps incrementally better, would like to share what we’ve learned with the community.

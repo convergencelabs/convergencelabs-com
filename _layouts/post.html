@@ -21,6 +21,7 @@ layout: default
             <i class="fa fa-calendar-o"></i>
             <span>{{ page.date | date: "%B %d, %Y" }}</span>
           </a>
+          <span class="post-author">By {{page.author}}</span>
         </div><!-- / .meta -->
 
         <!-- Title -->
@@ -29,7 +30,6 @@ layout: default
         <div class="blog-post-content">
           {{ content }}
         </div>
-
       </div><!-- / .blog-post-single -->
 
       <!-- Post Navigation -->
@@ -43,9 +43,7 @@ layout: default
           {% endif %}
         </nav>
       </div>
-
     </div><!-- / .col-md-8 -->
-
 
     <!-- ========== Sidebar ========== -->
     <aside class="col-md-offset-1 col-md-3 sidebar">
@@ -58,7 +56,6 @@ layout: default
         </div>
       </div>
 
-
       <!-- Tags - Widget -->
       <div class="col-md-12 ws-s tags-widget">
         <h5 class="header-widget">Categories</h5>
@@ -69,19 +66,9 @@ layout: default
         </ul>
       </div>
 
-
       <!-- Recent Posts - Widget -->
       <div class="col-md-12 ws-s recent-posts-widget">
-        <h5 class="header-widget">Recent Posts</h5>
-        {% for post in site.posts limit:3 %}
-        <div class="widget-item">
-          <a href="{{ post.url }}"><h6 class="h-alt">{{post.title}}</h6></a>
-          <a href="{{ post.url }}" class="post-date">
-            <i class="fa fa-calendar-o"></i>
-            <span>{{ post.date | date: "%B %d, %Y" }}</span>
-          </a>
-        </div>
-        {% endfor %}
+        {% include recent-posts.html %}
       </div><!-- / .recent-posts-widget -->
 
     </aside><!-- / .sidebar -->
