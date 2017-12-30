@@ -72,3 +72,23 @@
     }
   }
 }
+
+.convergence-io-widget {
+  color: $body-text-color;
+
+  ul {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+
+      a, a:active, a:visited {
+        color: $body-text-color;
+      }
+
+      a:hover {
+        color: white;
+      }
+    }
+  }
+}
