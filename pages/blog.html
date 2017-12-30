@@ -69,36 +69,20 @@ pagination:
         {% include recent-posts.html %}
       </div><!-- / .recent-posts-widget -->
 
-      <!-- Categories - Widget -->
+      <!-- Categories - Widget
       <div class="col-md-12 ws-s categories-widget">
         <h5 class="header-widget">Categories</h5>
-
-        <!-- Item 1 -->
+        {% for category in site.categories %}
         <div class="widget-item">
-          <a href="#">Web Design - <span>15</span></a>
+          <a href="#">{{ category[0] | capitalize }} <span>({{category[1].size}})</span></a>
         </div>
-
-        <!-- Item 2 -->
-        <div class="widget-item">
-          <a href="#">Graphic Design - <span>6</span></a>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="widget-item">
-          <a href="#">iOS Development - <span>12</span></a>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="widget-item">
-          <a href="#">Other - <span>3</span></a>
-        </div>
-
+        {% endfor %}
       </div><!-- / .categories-widget -->
 
       <!-- Text - Widget -->
       <div class="col-md-12 text-widget">
-        <h5 class="header-widget">Text Widget</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae qui error, incidunt quia pariatur facere quasi totam inventore amet rerum.</p>
+        <h5 class="header-widget">About</h5>
+        <p>The Convergence Labs Blog is a place for us to share our thoughts on building apps, real time collaboration trends, emerging technology, design issues and other items of interest.</p>
       </div><!-- / .text-widget -->
 
     </aside><!-- / .sidebar -->
