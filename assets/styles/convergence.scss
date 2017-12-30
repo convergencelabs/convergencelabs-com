@@ -32,3 +32,43 @@
   display: flex;
   align-items: center;
 }
+
+.mission {
+  background: whitesmoke;
+  padding: 20px;
+  text-align: justify;
+  font-size: 16px;
+  font-style: italic;
+  color: black;
+  margin-bottom: 80px;
+}
+
+.motivation {
+  text-align: justify;
+}
+
+#about {
+  .sec-heading {
+    margin-bottom: 60px;
+  }
+}
+
+.recent-posts-footer-widget {
+
+  div.recent-post {
+    margin-bottom: 10px;
+    color: $body-text-color;
+
+    a:active, a:visited {
+      color: $body-text-color;
+    }
+
+    &:hover {
+      color: white;
+
+      a:active, a:visited {
+        color: white;
+      }
+    }
+  }
+}
