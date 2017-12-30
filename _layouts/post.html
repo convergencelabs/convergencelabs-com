@@ -3,6 +3,10 @@ layout: default
 ---
 {% include post-header.html %}
 
+{% assign content_array = page.content | split: page.excerpt_separator %}
+{% assign excerpt_only = content_array | first %}
+{% assign post_content = content_array | last %}
+
 <!-- ========== Single Blog Post ========== -->
 
 <div id="blog" class="section container blog-classic">
@@ -28,7 +32,7 @@ layout: default
         <h2 class="post-title">{{page.title}}</h2>
 
         <div class="blog-post-content">
-          {{ content }}
+          {{ post_content }}
         </div>
       </div><!-- / .blog-post-single -->
 
