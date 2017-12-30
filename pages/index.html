@@ -230,49 +230,17 @@ permalink: /
 </div><!-- / .dark-bg .cta-link -->
 
 <!-- ========== Blog Preview ========== -->
-
 <div class="gray-bg">
   <section id="blog" class="section container blog-columns blog-preview">
-    <div class="row">
+    <header class="sec-heading">
+      <h2>Latest from our blog</h2>
+      <span class="subheading">Our Thoughts and Trends in Developing Collaborative Apps</span>
+    </header>
 
-      <header class="sec-heading">
-        <h2>Latest from our blog</h2>
-        <span class="subheading">Our Thoughts and Trends in Developing Collaborative Apps</span>
-      </header>
-
+    <div class="row blog-row">
       {% for post in site.posts limit:3 %}
-      <div class="col-lg-4 col-md-6 mb-sm-50">
-        <div class="blog-post wow fadeIn" data-wow-duration="2s">
-
-          <!-- Image -->
-          <a href="{{ post.url }}" class="post-img"><img src="{{post.featured_image}}" alt="{{post.title}}"></a>
-
-          <div class="bp-content">
-
-            <!-- Meta data -->
-            <div class="post-meta">
-              <a href="#" class="post-date">
-                <i class="fa fa-calendar-o"></i>
-                <span>{{ post.date | date: "%B %d, %Y" }}</span>
-              </a>
-              <a href="#" class="post-comments">
-                <i class="fa fa-comments-o"></i>
-                <span>12</span>
-              </a>
-            </div><!-- / .meta -->
-
-            <!-- Post Title -->
-            <a href="{{ post.url }}" class="post-title"><h4>{{post.title}}</h4></a>
-
-            <!-- Blurb -->
-            {{ post.excerpt }}
-
-            <!-- Link -->
-            <a href="{{ post.url }}" class="btn btn-small">Read More</a>
-
-          </div><!-- / .bp-content -->
-
-        </div><!-- / .blog-post -->
+      <div class="col-lg-4 col-md-6 mb-sm-50 blog-column">
+        {% include blog-post-card.html %}
       </div><!-- / .col-lg-4 -->
       {% endfor %}
     </div><!-- / .row -->

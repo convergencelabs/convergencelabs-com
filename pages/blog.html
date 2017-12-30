@@ -17,28 +17,7 @@ pagination:
       <div class="row blog-row">
       {% endif%}
         <div class="col-lg-6 mb-sm-50 ws-s blog-column">
-          <div class="blog-post">
-            <!-- Image -->
-            <a href="{{post.url}}" class="post-img"><img src="{{post.featured_image}}" alt="{{post.title}}"></a>
-            <div class="bp-content">
-              <!-- Meta data -->
-              <div class="post-meta">
-                <a href="#" class="post-date">
-                  <i class="fa fa-calendar-o"></i>
-                  <span>{{ post.date | date: "%B %d, %Y" }}</span>
-                </a>
-                <div class="post-author">By {{post.author}}</div>
-              </div><!-- / .meta -->
-              <!-- Post Title -->
-              <a class="post-title" href="{{post.url}}" ><h4>{{post.title}}</h4></a>
-              <!-- Blurb -->
-              <div class="post-excerpt">{{post.excerpt}}</div>
-              <!-- Link -->
-              <div class="text-right">
-                <a href="{{post.url}}" class="btn btn-small">Read More</a>
-              </div>
-            </div><!-- / .bp-content -->
-          </div><!-- / .blog-post -->
+          {% include blog-post-card.html %}
         </div><!-- / .col-lg-6 -->
       {% if loopindex == 1 or forloop.last %}
       </div>
