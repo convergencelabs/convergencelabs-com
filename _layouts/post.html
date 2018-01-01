@@ -28,6 +28,11 @@ layout: default
           <span class="post-author">By {{page.author}}</span>
         </div><!-- / .meta -->
 
+        <div class="resp-sharing-button-bar">
+          {% assign post_url= page.url | prepend:site.url %}
+          {% include sharing-buttons.html url=post_url %}
+        </div>
+
         <!-- Title -->
         <h2 class="post-title">{{page.title}}</h2>
 

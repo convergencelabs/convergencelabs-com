@@ -192,7 +192,7 @@
 
 /* ---- 18.4 Blog Post Single ---- */
 .blog-post-single {
-  margin-bottom: $ws-m;
+  margin-bottom: $ws-s;
 
   .post-img {
     margin-bottom: 20px;
@@ -246,11 +246,11 @@
 
   .post-title {
     margin: 0;
-    padding-top: 30px;
+    padding-top: 25px;
   }
 
   .blog-post-content {
-    margin-top: $ws-s;
+    margin-top: 30px;
     margin-bottom: $ws-s;
 
     text-align: justify;
