@@ -6,6 +6,7 @@ layout: default
 {% assign content_array = page.content | split: page.excerpt_separator %}
 {% assign excerpt_only = content_array | first %}
 {% assign post_content = content_array | last %}
+{% assign post_url= page.url | prepend:site.url %}
 
 <!-- ========== Single Blog Post ========== -->
 
@@ -28,8 +29,8 @@ layout: default
           <span class="post-author">By {{page.author}}</span>
         </div><!-- / .meta -->
 
+        <!-- Sharing Bar -->
         <div class="resp-sharing-button-bar">
-          {% assign post_url= page.url | prepend:site.url %}
           {% include sharing-buttons.html url=post_url %}
         </div>
 
@@ -39,8 +40,13 @@ layout: default
         <div class="blog-post-content">
           {{ post_content }}
         </div>
-      </div><!-- / .blog-post-single -->
 
+        <!-- Sharing Bar -->
+        <div class="resp-sharing-button-bar">
+          {% include sharing-buttons.html url=post_url %}
+        </div>
+      </div><!-- / .blog-post-single -->
+      
       <!-- Post Navigation -->
       <div class="row">
         <nav class="blog-post-nav">
