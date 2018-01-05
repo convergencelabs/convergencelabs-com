@@ -69,12 +69,12 @@ pagination:
         {% include recent-posts.html %}
       </div><!-- / .recent-posts-widget -->
 
-      <!-- Categories - Widget
+      <!-- Categories - Widget -->
       <div class="col-md-12 ws-s categories-widget">
         <h5 class="header-widget">Categories</h5>
         {% for category in site.categories %}
         <div class="widget-item">
-          <a href="#">{{ category[0] | capitalize }} <span>({{category[1].size}})</span></a>
+          <a href="/blog/category/{{category[0]}}/">{{ category[0] | capitalize }} <span>({{category[1].size}})</span></a>
         </div>
         {% endfor %}
       </div><!-- / .categories-widget -->

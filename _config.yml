@@ -29,8 +29,9 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
+  - jekyll-archives
 
-permalink: /:year/:month/:slug/
+permalink: /blog/:year/:month/:slug/
 
 keep_files:
   - assets/fonts
@@ -106,3 +107,14 @@ pagination:
   indexpage: 'index'
 
 ############################################################
+
+
+jekyll-archives:
+  enabled: ['categories']
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/blog/category/:name/'
