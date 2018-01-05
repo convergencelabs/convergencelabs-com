@@ -1,6 +1,9 @@
 ---
-layout: page
+layout: default
 ---
+{% assign subtitle = "Category: " | append: page.title %}
+{% include page-title.html title="The Convergence Labs Blog" subtitle=subtitle %}
+
 <div id="blog" class="section container blog-classic">
   <div class="row">
     <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
