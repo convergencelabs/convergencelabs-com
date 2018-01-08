@@ -10,10 +10,11 @@
   background: $navbar-background;
 
   .navbar-header {
-    width: 27%;
+    width: 35%;
     margin-top: 6px;
 
     .navbar-brand {
+      font-size: 1.8em;
       padding: 15px 0;
       margin-left: 0;
 
@@ -24,7 +25,9 @@
       }
 
       span {
-        color: white;
+        font-family: 'CenturyGothic';
+        text-transform: uppercase;
+        color: #007bc3; 
         position: relative;
         top: 3px;
       }
