@@ -30,6 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-archives
+  - jekyll-sitemap
 
 permalink: /blog/:year/:month/:slug/
 
@@ -49,6 +50,9 @@ exclude:
   - .gitignore
   - .sass-cache
   - README.md
+  - Dockerfile
+  - nginx-default.conf
+  - _docker
 
 
 pagination:

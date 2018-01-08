@@ -17,3 +17,6 @@ This repository hosts the source for the convergencelabs.com. The website is bui
 
 ## Jekyll Build
 If you just want to build the site run `jekyll build`. The site will be generated into the `_site` directory.
+
+## Docker Build
+If you just want to build the site run `docker build -t convergencelabs-com .`. The site will be generated into the `_site` directory.
