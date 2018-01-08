@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Convergence Labs{% if page.title %} - {{page.title}}{% endif %}</title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Convergence Labs{% if page.title %} - {{page.title}}{% endif %}</title>
+
+  {% include meta-data.html %}
 
   <!-- Favicon -->
   <link rel="icon" type="image/ico" href="/assets/images/favicon/favicon.ico" sizes="48x48">
@@ -26,11 +28,6 @@
   <link rel="stylesheet" href="/assets/styles/vendor/animate.css">
 
   <link href="/assets/styles/convergence.css" rel="stylesheet">
-
-
-  <!--&lt;!&ndash; Definity CSS &ndash;&gt;-->
-  <!--<link rel="stylesheet" href="/assets/styles/main.css">-->
-  <!--<link rel="stylesheet" href="/assets/styles/responsive.css">-->
 
   <!-- JS -->
   <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
