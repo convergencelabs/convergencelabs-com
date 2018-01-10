@@ -244,16 +244,18 @@
   }
   // .post-meta
 
-  .post-title {
-    margin: 0;
-    padding-top: 25px;
-  }
-
   .blog-post-content {
     margin-top: 30px;
     margin-bottom: $ws-s;
 
     text-align: justify;
+
+    h1 {
+      letter-spacing: 0;
+      font-size: 1.5em;
+      text-transform: none;
+      margin-top: 20px;
+    }
 
     p {
       margin-bottom: 20px;

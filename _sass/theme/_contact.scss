@@ -2,7 +2,9 @@
 	19.0 Contact Layouts
 -------------------------------------------------- */
 
-
+#contact {
+  padding-top: 60px;
+}
 
 .map-boxed {
 	display: block;
@@ -49,7 +51,14 @@
 
 
 form {
+  margin-bottom: 60px; 
 
+  .auto-width { 
+    width: auto; 
+  }
+  label.required:after {
+    content: "*";
+  }
 	.alert-error {
 		color: $error-red;
 		font-size: .85em;

@@ -7,15 +7,12 @@ permalink: /contact/
 <!-- ========== Contact ========== -->
 <section id="contact" class="section contact-2">
 
-  <header class="sec-heading">
-    <h2>Say Hello</h2>
-    <span class="subheading">We'd love to hear from you</span>
-  </header>
+  {% include contact-form.html %}
 
   <!-- Map -->
   <div id="map-canvas" class="gmap map-wide"></div>
 
-  <div class="footer-litle ws-m">
+  <div class="footer-litle">
     <div class="gray-bg">
 
       <!-- Contact Info -->
@@ -35,7 +32,7 @@ permalink: /contact/
             <span class="linea-basic-paperplane adr-icon"></span>
             <div class="adr-group">
               <span class="adr-heading">Email</span>
-              <span class="adr-info">contact (at) convergencelabs (dot) com</span>
+              <span class="adr-info"><a href="mailto:contact@convergencelabs.com">contact@convergencelabs.com</a></span>
             </div>
           </li>
 
@@ -44,7 +41,7 @@ permalink: /contact/
             <span class="linea-basic-smartphone adr-icon"></span>
             <div class="adr-group">
               <span class="adr-heading">Phone</span>
-              <span class="adr-info">+1 (605)-370-5725</span>
+              <span class="adr-info"><a href="tel:+1 (605)-370-5725">+1 (605)-370-5725</a></span>
             </div>
           </li>
         </ul>
@@ -52,42 +49,6 @@ permalink: /contact/
     </div><!-- / .gray-bg -->
   </div>
 
-  <div class="container">
-
-    <!-- Contact Form -->
-    <div class="row">
-      <form action="../assets/contact-form/contact-form.php" method="POST" id="contact-form-1" class="form-ajax">
-        <div class="col-md-offset-2 col-md-6 wow fadeInUp" data-wow-duration="1s">
-
-          <!-- Name -->
-          <div class="form-group">
-            <input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your name">
-            <label for="name-contact-1">Name</label>
-            <span class="pull-right alert-error"></span>
-          </div>
-
-          <!-- Email -->
-          <div class="form-group">
-            <input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email">
-            <label for="email-contact-1">Email</label>
-            <span class="pull-right alert-error"></span>
-          </div>
-
-          <!-- Message -->
-          <div class="form-group">
-            <textarea name="message" id="message-contact-1" class="form-control" rows="5" placeholder="Your Message"></textarea>
-            <label for="message-contact-1">Message</label>
-          </div>
-          <div>
-            <input type="submit" class="btn pull-right" value="Send Message">
-          </div>
-
-          <!-- Ajax Message -->
-          <div class="ajax-message col-md-12 no-gap"></div>
-        </div>
-      </form>
-    </div><!-- / .row -->
-  </div><!-- / .container -->
 </section><!-- / .contact-1 -->
 <script src="/assets/js/gmap.js" defer></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOcd7o0W0r846FC_GoHSK56xeAvP8fV4s" defer></script>

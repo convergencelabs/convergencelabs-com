@@ -1,0 +1,126 @@
+<!-- Note :
+- You can modify the font style and form style to suit your website. 
+- Code lines with comments ���Do not remove this code���  are required for the form to work properly, make sure that you do not remove these lines of code. 
+- The Mandatory check script can modified as to suit your business needs. 
+- It is important that you test the modified form before going live.
+- Do not remove captcha and other form elements that are necessary for the form to work.  -->
+<div id='crmWebToEntityForm'>
+  <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+  <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2212544000000535001 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory()' accept-charset='UTF-8'>
+    <!-- Do not remove this code. -->
+    <input type='text' style='display:none;' name='xnQsjsdp' value='54713aca19b6c4499069c0f3e68b8653d47daa8dbab4826d2d1199fcb67f6b6c'/>
+    <input type='hidden' name='zc_gad' id='zc_gad' value=''/>
+    <input type='text' style='display:none;' name='xmIwtLD' value='c638e3865e07656bf8c00583893e892d5f66e9eb4df48e36a05f9fdd291a69a6'/>
+    <input type='text' style='display:none;'  name='actionType' value='TGVhZHM='/>
+  
+    <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;convergencelabs.com&#x2f;contact-submitted' /> 
+    <!-- Do not remove this code. -->
+    <style>
+      tr , td { 
+        padding:6px;
+        border-spacing:0px;
+        border-width:0px;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="required">First Name</label></td>
+            <input type='text' class="form-control" maxlength='40' name='First Name' />
+          </div>
+        </div>   
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="required">Last Name</label>
+            <input type='text' class="form-control" maxlength='80' name='Last Name' />
+          </div>
+        </div>   
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="required">Company</label>
+            <input type='text' class="form-control" maxlength='100' name='Company' />
+          </div>
+        </div>   
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label>Title</label>
+            <input type='text' class="form-control" maxlength='100' name='Designation' />
+          </div>
+        </div>   
+      </div>
+      <div style='display:none'>
+        <select style='width:250px;' name='Lead Source'>
+          <option selected value='Website'>Website</option>
+        </select>
+        <select style='width:250px;' name='Lead Status'>
+          <option selected value='Not&#x20;Contacted'>Not Contacted</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="required">Enter the Captcha</label><br>
+        <img id='imgid' src='https://crm.zoho.com/crm/CaptchaServlet?formId=c638e3865e07656bf8c00583893e892d5f66e9eb4df48e36a05f9fdd291a69a6&grpid=54713aca19b6c4499069c0f3e68b8653d47daa8dbab4826d2d1199fcb67f6b6c'>
+        <a href='javascript:;' onclick='reloadImg()'>Reload</a>
+        <input type='text' class="form-control auto-width" maxlength='80' name='enterdigest' />
+      </div>
+      <div style="margin-top: 20px;">
+        <input type='submit' value='Submit' class="btn btn-primary"/>
+      </div>
+    </div>
+
+    <script>
+      var mndFileds=new Array('Company','Last Name','Lead Status');
+      var fldLangVal=new Array('Company','Last Name','Lead Status');
+      var name='';
+      var email='';
+  
+      /* Do not remove this code. */
+      function reloadImg() {
+        if(document.getElementById('imgid').src.indexOf('&d') !== -1 ) {
+          document.getElementById('imgid').src=document.getElementById('imgid').src.substring(0,document.getElementById('imgid').src.indexOf('&d'))+'&d'+new Date().getTime();
+        } else {
+          document.getElementById('imgid').src = document.getElementById('imgid').src+'&d'+new Date().getTime();
+        } 
+      }
+
+      function checkMandatory() {
+        for(i=0;i<mndFileds.length;i++) {
+          var fieldObj=document.forms['WebToLeads2212544000000535001'][mndFileds[i]];
+          if(fieldObj) {
+            if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+              if(fieldObj.type =='file') { 
+                alert('Please select a file to upload.'); 
+                fieldObj.focus(); 
+                return false;
+              } 
+              alert(fldLangVal[i] +' cannot be empty.'); 
+              fieldObj.focus();
+              return false;
+            } else if(fieldObj.nodeName=='SELECT') {
+              if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+                alert(fldLangVal[i] +' cannot be none.'); 
+                fieldObj.focus();
+                return false;
+              }
+            } else if(fieldObj.type =='checkbox') {
+              if(fieldObj.checked == false){
+                alert('Please accept  '+fldLangVal[i]);
+                fieldObj.focus();
+                return false;
+              } 
+            } 
+            try {
+              if(fieldObj.name == 'Last Name') {
+                name = fieldObj.value;
+              }
+            } catch (e) {}
+          }
+        }
+      }     
+    </script>
+  </form>
+  <!-- Do not remove this code. -->
+  <iframe name='captchaFrame' style='display:none;'></iframe>
+</div>
