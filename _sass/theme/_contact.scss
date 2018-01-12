@@ -73,7 +73,10 @@ form {
 		&:focus {
 			border-color: $error-red;
 		}
-	}
+  }
+  .submit-container {
+    margin-top: 20px;
+  }
 } // form
 
 

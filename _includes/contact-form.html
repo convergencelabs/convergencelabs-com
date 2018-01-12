@@ -1,9 +1,9 @@
 <!-- Note :
-- You can modify the font style and form style to suit your website. 
-- Code lines with comments ���Do not remove this code���  are required for the form to work properly, make sure that you do not remove these lines of code. 
-- The Mandatory check script can modified as to suit your business needs. 
-- It is important that you test the modified form before going live.
-- Do not remove captcha and other form elements that are necessary for the form to work.  -->
+   - You can modify the font style and form style to suit your website. 
+   - Code lines with comments ���Do not remove this code���  are required for the form to work properly, make sure that you do not remove these lines of code. 
+   - The Mandatory check script can modified as to suit your business needs. 
+   - It is important that you test the modified form before going live.
+   - Do not remove captcha and other form elements that are necessary for the form to work.  -->
 <div id='crmWebToEntityForm'>
   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
   <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2212544000000535001 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory()' accept-charset='UTF-8'>
@@ -26,30 +26,34 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="form-group">
-            <label class="required">First Name</label></td>
-            <input type='text' class="form-control" maxlength='40' name='First Name' />
+            <label for="firstName" class="required">First Name</label></td>
+            <input id="firstName" type='text' class="form-control" maxlength='40' name='First Name' autofocus />
           </div>
         </div>   
         <div class="col-sm-6">
           <div class="form-group">
-            <label class="required">Last Name</label>
-            <input type='text' class="form-control" maxlength='80' name='Last Name' />
+            <label for="lastName" class="required">Last Name</label>
+            <input id="lastName" type='text' class="form-control" maxlength='80' name='Last Name' />
           </div>
         </div>   
       </div>
       <div class="row">
         <div class="col-sm-6">
           <div class="form-group">
-            <label class="required">Company</label>
-            <input type='text' class="form-control" maxlength='100' name='Company' />
+            <label for="company" class="required">Company</label>
+            <input id="company" type='text' class="form-control" maxlength='100' name='Company' />
           </div>
         </div>   
         <div class="col-sm-6">
           <div class="form-group">
-            <label>Title</label>
-            <input type='text' class="form-control" maxlength='100' name='Designation' />
+            <label for="title">Title</label>
+            <input id="title" type='text' class="form-control" maxlength='100' name='Designation' /> 
           </div>
         </div>   
+      </div>
+      <div class="form-group">
+        <label for="description" class="required">Message</label>
+        <textarea id="description" class="form-control" name='Description' maxlength='32000' rows="6">&nbsp;</textarea>
       </div>
       <div style='display:none'>
         <select style='width:250px;' name='Lead Source'>
