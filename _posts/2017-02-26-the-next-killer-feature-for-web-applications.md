@@ -3,7 +3,7 @@ layout: post
 title:  "The Next Killer Feature for Web Applications"
 author: Alec LaLonde
 date:   2017-02-26 15:09:21 -0700
-categories: apps
+categories: realtime-collaboration
 featured_image: /assets/images/blog/coauthoring_spreadsheet.jpg
 excerpt_separator: <!--excerpt-->
 ---

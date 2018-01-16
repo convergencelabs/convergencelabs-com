@@ -3,7 +3,7 @@ layout: post
 title:  "Alpha Product Launched"
 author: Michael MacFadden
 date:   2016-11-15 15:09:21 -0700
-categories: apps
+categories: Convergence
 featured_image: /assets/images/blog/alpha.png
 excerpt_separator: <!--excerpt-->
 ---

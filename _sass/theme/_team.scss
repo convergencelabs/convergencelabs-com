@@ -15,8 +15,7 @@
 		transition: all .3s;
 
 		&:hover {
-			transform: translateY(-10px);
-			box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+			box-shadow: 0 11px 21px rgba(0, 0, 0, 0.15);
 
 			.t-image {
 
@@ -35,7 +34,10 @@
 		.t-image {
 			position: relative;
 			height: 375px;
-			overflow: hidden;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
 			.t-description {
 				display: block;

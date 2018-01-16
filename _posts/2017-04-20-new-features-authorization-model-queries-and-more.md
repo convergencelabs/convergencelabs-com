@@ -2,7 +2,7 @@
 layout: post
 title:  "New Features: Authorization, Model Queries, and More"
 date:   2017-04-20 15:09:21 -0700
-categories: convergence.io
+categories: Convergence
 featured_image: /assets/images/blog/update.jpg
 author: Michael MacFadden
 excerpt_separator: <!--excerpt-->

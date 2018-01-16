@@ -3,7 +3,7 @@ layout: post
 title:  "Before You Start Building That MVP"
 date:   2017-03-20 15:09:21 -0700
 author: Alec LaLonde
-categories: apps
+categories: startups
 featured_image: /assets/images/blog/board-game-start.jpg
 excerpt_separator: <!--excerpt-->
 ---

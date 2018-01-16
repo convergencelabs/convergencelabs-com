@@ -3,7 +3,7 @@ layout: post
 title:  "Why We're Here"
 author: Michael MacFadden
 date:   2017-01-10 15:09:21 -0700
-categories: apps
+categories: general
 featured_image: /assets/images/blog/blank-page.jpg
 excerpt_separator: <!--excerpt-->
 ---

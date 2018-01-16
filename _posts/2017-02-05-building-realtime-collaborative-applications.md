@@ -3,7 +3,7 @@ layout: post
 title:  "Building Real Time Collaborative Apps"
 author: Alec LaLonde
 date:   2017-02-05 15:09:21 -0700
-categories: apps
+categories: realtime-collaboration
 featured_image: /assets/images/blog/car-schematic.jpg
 excerpt_separator: <!--excerpt-->
 ---

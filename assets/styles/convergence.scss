@@ -82,7 +82,7 @@
     &:hover {
       color: white;
 
-      a:active, a:visited {
+      a, a:active, a:visited {
         color: white;
       }
     }
@@ -149,4 +149,17 @@
       }
     }
   }
+}
+
+.blog-post-content blockquote {
+  margin: 3em;
+  border: 1px solid #eee;
+  border-left: 4px solid #007bc3;
+  font-style: italic;
+  padding: 1em;
+}
+
+#blog .posts li {
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
 }

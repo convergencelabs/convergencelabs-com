@@ -10,11 +10,11 @@ $(document).ready(function () {
 
     var mapOptions = {
       // How zoomed in you want the map to start at (always required)
-      zoom: 13,
+      zoom: 16,
       scrollwheel: false,
 
       // The latitude and longitude to center the map (always required)
-      center: new google.maps.LatLng(41.880038, -87.601127), // Chicago
+      center: new google.maps.LatLng(41.149183, -104.789659), // Cheyenne, WY
 
       // Styling of the map in JSON object
       styles: [{

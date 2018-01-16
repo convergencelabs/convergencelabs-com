@@ -3,7 +3,7 @@ layout: post
 title:  "Collaboration as a Service"
 author: Alec LaLonde
 date:   2017-01-18 15:09:21 -0700
-categories: apps
+categories: realtime-collaboration
 featured_image: /assets/images/blog/whiteboard.jpg
 excerpt_separator: <!--excerpt-->
 ---

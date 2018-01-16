@@ -3,7 +3,7 @@ layout: post
 title:  "Redefining Real Time Collaboration"
 author: Michael MacFadden
 date:   2017-02-13 15:09:21 -0700
-categories: apps
+categories: realtime-collaboration
 featured_image: /assets/images/blog/right-left-brain.jpg
 excerpt_separator: <!--excerpt-->
 ---
