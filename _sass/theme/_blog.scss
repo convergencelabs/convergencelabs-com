@@ -54,8 +54,6 @@
 .blog-columns {
 
   .blog-row {
-    display: flex;
-    flex-direction: row;
 
     .blog-column {
       display: flex;
@@ -63,7 +61,6 @@
   }
 }
 
-// .blog-columns
 .blog-post {
   display: flex;
   flex-direction: column;

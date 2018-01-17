@@ -3,7 +3,7 @@ layout: post
 title:  "UtahJS Talk:  Real Time Apps and Beyond"
 author: Alec LaLonde
 date:   2016-11-20 15:09:21 -0700
-categories: community, talks
+categories: [community, talks]
 featured_image: /assets/images/blog/utahjs.png
 excerpt_separator: <!--excerpt-->
 ---

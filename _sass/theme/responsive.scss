@@ -44,13 +44,24 @@
 
 	.mb-xs-100 {
 		margin-bottom: 100px;
-	}
-} // @media (max-width: $screen-md)
+  }
+} 
+@media (max-width: $screen-sm) {
+  .section {
+		padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .sec-heading { 
+    margin-bottom: 50px;
+  }
+}
 
 
 
 /* ---- Navigation ---- */
-@media (max-width: $screen-lg) {
+@media (max-width: $screen-md) {
 	.navbar {
 
 		.navbar-header {
@@ -84,7 +95,6 @@
 		} // .navbar-header
 
 		.navbar-collapse {
-			margin-top: 15px;
 			padding-left: 25px;
 			padding-right: 25px;
 			max-height: 100%;
@@ -134,7 +144,11 @@
 			.navbar-toggle {
 				margin-top: 15px;
 			}
-		}
+    }
+    
+    .navbar-collapse {
+			margin-top: 15px;
+    }
 	}
 
 	.navbar-inverse {
@@ -158,6 +172,26 @@
 		} // .navbar-header
 	} // .navbar-inverse
 } // @media (max-width: $screen-lg)
+
+@media (min-width: $screen-md) {
+  .navbar-nav {
+    margin-top: 12px;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .navbar {
+		.navbar-header {
+			.navbar-brand {
+        margin-left: 0;
+        font-size: 1.6em;
+      }
+    }
+  }
+}
 
 
 
@@ -1016,7 +1050,7 @@
 		}
 
 		.bp-comment-reply {
-			@extend .bp-comment;
+			
 			margin-left: 0;
 		}
 
@@ -1289,20 +1323,18 @@
 	.freelancer-hero {
 		background-attachment: initial;
 
-		.hero-content-wrapper {
+    .hero-content {
+      padding-top: 50px;
+      padding-left: 35px;
+      padding-right: 35px;
 
-			.hero-content {
-				padding-left: 35px;
-				padding-right: 35px;
+      .hero-lead {
+        font-size: 4em;
+      }
 
-				.hero-lead {
-					font-size: 4em;
-				}
-
-				.hero-subheading {
-					margin-top: $ws-s;
-				}
-			}
+      .hero-subheading {
+        margin-top: $ws-s;
+      }
 		}
 	} // .main-demo-hero
 
@@ -1409,23 +1441,20 @@
 	.fs-video-hero,
 	.fw-video-hero {
 
-		.hero-content-wrapper {
+    .hero-content {
 
-			.hero-content {
+      .hero-lead {
+        font-size: 3em;
 
-				.hero-lead {
-					font-size: 3.5em;
+        br {
+          display: none;
+        }
+      }
 
-					br {
-						display: none;
-					}
-				}
-
-				.hero-subheading {
-					margin-top: $ws-s;
-				}
-			}
-		}
+      .hero-subheading {
+        margin-top: 0;
+      }
+    }
 	} // .main-demo-hero
 
 	.fs-slider-hero {

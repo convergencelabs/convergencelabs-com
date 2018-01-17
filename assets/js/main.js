@@ -1,12 +1,17 @@
 (function ($) {
   'use strict';
 
+  var tabletWidth = 1024;
+  var desktopWidth = 1200;
+
   /* --------------------------------------------------
     Initialization
   -------------------------------------------------- */
 
   // Initialize all functions when the document is ready.
   $(document).ready(function () {
+
+
 
     initNavbar();
     initScroller();
@@ -26,7 +31,7 @@
     }
 
     // Parallax disabled for mobile screens
-    if ($(window).width() >= 1260) {
+    if ($(window).width() >= tabletWidth) {
       initParallax();
 
       $(window).stellar({
@@ -81,7 +86,7 @@
 
     // Nav on mobile screens
     $(window).resize(function () {
-      if ($(window).width() <= 1259) {
+      if ($(window).width() < tabletWidth) {
         $('nav').addClass('mobile-nav');
       } else {
         $('nav').removeClass('mobile-nav');
@@ -91,7 +96,7 @@
         $('nav').removeClass('navbar-trans');
         $('nav').removeClass('navbar-trans-dark');
       } else {
-        if ($(window).width() >= 1259 && $(window).top) {
+        if ($(window).width() >= tabletWidth && $(window).top) {
           $('nav').addClass('navbar-trans');
         }
       }
@@ -119,6 +124,12 @@
           }
         });
 
+      }
+
+      if ($(window).width() < desktopWidth) {
+        $('.blog-columns .blog-column:last').hide();
+      } else {
+        $('.blog-columns .blog-column:last').show();
       }
 
     }).resize();
