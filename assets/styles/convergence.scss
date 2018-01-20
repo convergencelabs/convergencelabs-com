@@ -43,6 +43,10 @@
   font-size: 1.3em;
   margin-top: 2em;
 
+  img {
+    margin-bottom: 30px;
+  }
+
   li {
     margin-bottom: 8px;
   }
@@ -114,6 +118,10 @@
 }
 
 .hero-content {
+  h1 {
+    max-width: 600px;
+  }
+
   h4 {
     display: inline-block;
     padding: 20px;

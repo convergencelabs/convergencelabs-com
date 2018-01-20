@@ -69,10 +69,11 @@
   flex-direction: column;
   border-top: 1px solid $lighter;
   background: $lighter;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   transition: all .3s;
 
   &:hover {
+    transform: translateY(-2px);
     box-shadow: 0 11px 21px rgba(0, 0, 0, 0.15);
   }
 
