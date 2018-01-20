@@ -434,9 +434,11 @@
         a {
           color: $white;
 
-          &:focus,
+          &:focus {
+            color: $white;
+          }
           &:hover {
-            color: $white !important;
+            color: $convergence-blue;
           }
         }
       }
@@ -494,7 +496,7 @@
        a {
         &:focus,
         &:hover {
-          color: $gray-light !important;
+          color:  $convergence-blue !important;
         }
       }
     }
@@ -503,7 +505,7 @@
        a {
         color: $gray-light !important;
         &:hover {
-          color: $gray-light !important;
+          color:  $convergence-blue !important;
         }
       }
     }

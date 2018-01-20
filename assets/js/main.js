@@ -1,4 +1,4 @@
-(function ($) {
+ (function ($) {
   'use strict';
 
   var tabletWidth = 1024;
@@ -124,12 +124,6 @@
           }
         });
 
-      }
-
-      if ($(window).width() < desktopWidth) {
-        $('.blog-columns .blog-column:last').hide();
-      } else {
-        $('.blog-columns .blog-column:last').show();
       }
 
     }).resize();
@@ -697,9 +691,7 @@
   -------------------------------------------------- */
 
   function initAnimation() {
-
     new WOW().init();
-
   }
 
 

@@ -55,6 +55,9 @@
 
   .blog-row {
 
+    display: flex;
+    flex-wrap: wrap;
+
     .blog-column {
       display: flex;
     }
