@@ -3,17 +3,29 @@ layout: page
 title: Contact
 permalink: /contact/
 ---
-
 <!-- ========== Contact ========== -->
-<section id="contact" class="section contact-2">
+<section id="contact" class="contact-2">
+
+  <header class="sec-heading">
+    <h2>Get In Touch</h2>
+    <span class="subheading">We'd Love to Hear From You</span>
+  </header>
 
   {% include contact-form.html %}
 
-  <!-- Map -->
-  <div id="map-canvas" class="gmap map-wide"></div>
+</section>
 
-  <div class="footer-litle">
-    <div class="gray-bg">
+<div class=" gray-bg">
+  <section class="section">
+
+    <header class="sec-heading">
+      <h2>Locations</h2>
+    </header>
+
+    <!-- Map -->
+    <div id="map-canvas" class="gmap map-wide"></div>
+
+    <div class="footer-litle">
 
       <!-- Contact Info -->
       <address>
@@ -23,16 +35,7 @@ permalink: /contact/
             <span class="linea-basic-map adr-icon"></span>
             <div class="adr-group">
               <span class="adr-heading">Locations</span>
-              <span class="adr-info">Sioux Falls, SD <br /> San Diego, CA <br /> Salt Lake City, UT</span>
-            </div>
-          </li>
-
-          <!-- Email -->
-          <li>
-            <span class="linea-basic-paperplane adr-icon"></span>
-            <div class="adr-group">
-              <span class="adr-heading">Email</span>
-              <span class="adr-info"><a href="mailto:contact@convergencelabs.com">contact@convergencelabs.com</a></span>
+              <span class="adr-info">Sioux Falls, SD <br/> San Diego, CA <br/> Salt Lake City, UT</span>
             </div>
           </li>
 
@@ -46,9 +49,11 @@ permalink: /contact/
           </li>
         </ul>
       </address>
-    </div><!-- / .gray-bg -->
-  </div>
+    </div>
 
-</section><!-- / .contact-1 -->
+  </section><!-- / .contact-1 -->
+</div><!-- / .gray-bg -->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOcd7o0W0r846FC_GoHSK56xeAvP8fV4s"
+        defer></script>
 <script src="/assets/js/gmap.js" defer></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOcd7o0W0r846FC_GoHSK56xeAvP8fV4s" defer></script>
