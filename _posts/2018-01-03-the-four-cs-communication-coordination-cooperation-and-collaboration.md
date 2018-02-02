@@ -74,5 +74,5 @@ There is no “best” style of interaction that works for all systems and users
 <p>
 While the full complexities of user interaction in the context of software systems can’t be fully explored in a single blog post, having a basic understanding of the "Four Cs" is a great foundation from which to start designing a multi-user software product.  At Convergence Labs, we’ve designed dozens of successful collaborative applications. If you are considering providing real time collaboration in your app, <a href="/contact/">get in touch with us</a> and we can help you design a great user experience your users will love. 
 <p></p>
-<div id="cite-1" class="text-left">[1] <a href="http://proceedings.aom.org/content/2014/1/13532?related-urls=yes&legid=amproc;2014/1/13532">http://proceedings.aom.org/content/2014/1/13532?related-urls=yes&legid=amproc;2014/1/13532</a></div>
-<div id="cite-2" class="text-left">[2] <a href="http://www.sccharterschools.org/assets/documents/collaborationvsthe3cs.pdf">http://www.sccharterschools.org/assets/documents/collaborationvsthe3cs.pdf</a></div>
+<div id="cite-1" class="cite">[1] <a href="http://proceedings.aom.org/content/2014/1/13532?related-urls=yes&legid=amproc;2014/1/13532">http://proceedings.aom.org/content/2014/1/13532?related-urls=yes&legid=amproc;2014/1/13532</a></div>
+<div id="cite-2" class="cite">[2] <a href="http://www.sccharterschools.org/assets/documents/collaborationvsthe3cs.pdf">http://www.sccharterschools.org/assets/documents/collaborationvsthe3cs.pdf</a></div>

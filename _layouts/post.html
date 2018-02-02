@@ -20,7 +20,7 @@ layout: default
 </header>
 <div id="blog" class="section container blog-classic">
   <div class="row">
-    <div class="col-md-8 mb-sm-160">
+    <div class="col-md-8 mb-sm-100">
 
       <!-- Blog Post -->
       <div class="col-md-12 blog-post-single wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s">
@@ -53,16 +53,14 @@ layout: default
       </div><!-- / .blog-post-single -->
       
       <!-- Post Navigation -->
-      <div class="row">
-        <nav class="blog-post-nav">
-          {% if page.previous.url %}
-          <a href="{{page.previous.url}}" class="prev-btn">Prev post</a>
-          {% endif %}
-          {% if page.next.url %}
-          <a href="{{page.next.url}}" class="next-btn">Next post</a>
-          {% endif %}
-        </nav>
-      </div>
+      <nav class="blog-post-nav">
+        {% if page.previous.url %}
+        <a href="{{page.previous.url}}" class="prev-btn">Prev post</a>
+        {% endif %}
+        {% if page.next.url %}
+        <a href="{{page.next.url}}" class="next-btn">Next post</a>
+        {% endif %}
+      </nav>
     </div><!-- / .col-md-8 -->
 
     <!-- ========== Sidebar ========== -->

@@ -162,12 +162,33 @@
   }
 }
 
-.blog-post-content blockquote {
-  margin: 3em;
-  border: 1px solid #eee;
-  border-left: 4px solid #007bc3;
-  font-style: italic;
-  padding: 1em;
+.blog-post-content {
+  blockquote {
+    margin: 3em;
+    border: 1px solid #eee;
+    border-left: 4px solid #007bc3;
+    font-style: italic;
+    padding: 1em;
+  }
+
+  .cite { 
+    text-align: left;
+    word-break: break-word;
+  }
+
+  h3 {
+    margin: 3em 0 1em;
+  }
+}
+@media (max-width: $screen-sm) {
+  .blog-post-content {
+    blockquote {
+      margin: 2em 1em 3em;
+    }
+    ul {
+      text-align: left;
+    }
+  }
 }
 
 #blog .posts li {

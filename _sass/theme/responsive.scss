@@ -190,6 +190,12 @@
         font-size: 1.6em;
       }
     }
+    .navbar-collapse {
+      .navbar-nav {
+        padding: 0;
+        text-align: right;
+      }
+    }
   }
 }
 
@@ -200,6 +206,7 @@
 	.page-title {
 		padding-right: 35px;
 		padding-left: 35px;
+    padding-bottom: 50px;
 
 		.breadcrumb {
 			display: block;
@@ -213,7 +220,7 @@
 @media (max-width: $screen-xs) {
 	.page-title {
 		padding-right: 5px;
-		padding-left: 5px;
+    padding-left: 5px;
 	}
 } // @media (max-width: $screen-sm)
 
