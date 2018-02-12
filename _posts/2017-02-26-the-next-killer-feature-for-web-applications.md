@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Next Killer Feature for Web Applications"
+description: App developers are realizing that collaboration is a must have feature going forward. See who's adding collaboration to their apps today.
 author: Alec LaLonde
 date:   2017-02-26 15:09:21 -0700
 categories: realtime-collaboration

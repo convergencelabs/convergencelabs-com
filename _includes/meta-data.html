@@ -21,10 +21,10 @@
 {% if page.url %}
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 {% endif %}
-{% if page.image %}
-<meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+{% if page.featured_image %}
+<meta property="og:image" content="{{ site.url }}{{ page.featured_image }}" />
 {% else %}
-<meta property="og:image" content="{{ site.url }}/assets/img/convergence_logo_card.png" />
+<meta property="og:image" content="{{ site.url }}/assets/images/convergence_logo_card.png" />
 {% endif %}
 <!-- Article Information -->
 {% if page.categories %}
@@ -52,8 +52,8 @@
 {% else %}
 <meta itemprop="description" content="{{ site.description }}" />
 {% endif %}
-{% if page.image %}
-<meta itemprop="image" content="{{ page.image }}" />
+{% if page.featured_image %}
+<meta itemprop="image" content="{{ site.url }}{{ page.featured_image }}" />
 {% else %}
 <meta itemprop="image" content="{{ site.url }}/assets/img/convergence-logo.png" />
 {% endif %}
@@ -71,8 +71,8 @@
 {% else %}
 <meta name="twitter:description" content="{{ site.description }}" />
 {% endif %}
-{% if page.image %}
-<meta name="twitter:image" content="{{ page.image }}" />
+{% if page.featured_image %}
+<meta name="twitter:image" content="{{ site.url }}{{ page.featured_image }}" />
 {% else %}
 <meta name="twitter:image" content="{{ site.url }}/assets/img/convergence-logo.png" />
 {% endif %}

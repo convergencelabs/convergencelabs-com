@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Redefining Real Time Collaboration"
+description: Over the past few years, “collaboration” has become a buzzword, not just in the software industry but the business world at large. In this post we discuss our take on what this means in terms of an enhanced experience for application users.
 author: Michael MacFadden
 date:   2017-02-13 15:09:21 -0700
 categories: realtime-collaboration

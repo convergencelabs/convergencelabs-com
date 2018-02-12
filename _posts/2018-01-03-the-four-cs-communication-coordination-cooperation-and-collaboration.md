@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Four Cs: Communication, Coordination, Cooperation, and Collaboration"
+description: When designing user interfaces for multi-user software products, keep in mind the 4 Cs. 
 date:   2018-01-03 15:09:21 -0700
 categories: [design, realtime-collaboration, ux]
 featured_image: /assets/images/blog/letter-c.png

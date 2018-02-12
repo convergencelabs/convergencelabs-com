@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Introducing Collaborative Extensions for the Ace Editor"
+description: "Build a multi-user code editor in minutes, with Ace and Convergence Labs' Ace Collaborative Extensions."
 date:   2018-02-06 12:09:21 -0700
 categories: [convergence, community]
 featured_image: /assets/images/blog/ace-collab.jpg

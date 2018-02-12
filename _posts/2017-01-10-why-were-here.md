@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Why We're Here"
+description: Convergence exists to enable the next generation of applications that inevitably support highly interactive, realtime collaboration.
 author: Michael MacFadden
 date:   2017-01-10 15:09:21 -0700
 categories: general

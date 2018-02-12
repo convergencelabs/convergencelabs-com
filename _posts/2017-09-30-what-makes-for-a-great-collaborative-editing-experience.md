@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "What Makes for a Great Collaborative Editing Experience?"
+description: We have built a lot of collaborative apps over the years, and with the modest goal of making collaborative apps incrementally better, would like to share what we’ve learned with the community.
 date:   2017-09-30 15:09:21 -0700
 categories: [ux, design, realtime-collaboration]
 featured_image: /assets/images/blog/laptop-typing.jpg

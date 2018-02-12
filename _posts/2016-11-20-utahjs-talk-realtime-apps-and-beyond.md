@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "UtahJS Talk:  Real Time Apps and Beyond"
+description: Last week Alec LaLonde gave a talk at the November UtahJS meetup in Salt Lake City, UT. Realtime Apps and Beyond covered the past, present, and future of web applications with a focus on Realtime, and especially Collaborative, applications.
 author: Alec LaLonde
 date:   2016-11-20 15:09:21 -0700
 categories: [community, talks]
