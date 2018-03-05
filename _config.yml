@@ -37,6 +37,7 @@ exclude:
   - Dockerfile
   - nginx-default.conf
   - _docker
+  - scripts
 
 
 ############################################################
