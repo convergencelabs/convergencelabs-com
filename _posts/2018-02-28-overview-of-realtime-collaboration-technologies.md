@@ -24,8 +24,8 @@ This distinction is critical when evaluating third-party libraries.  If you spen
 ## Unique Constraints
 So you've determined that true real-time collaboration is a requirement for your application.  Congratulations -- you're ahead of the curve already!  RTC is still a relatively undeveloped space, so let's get into a few unique constraints that you may not have had to consider before:
 
-- Data models. The *shape* of your data heavily affects the difficulty of managing state between multiple users.  For example, one of the most common types of data, rich text, has yet to see a RTC implementation that supports a wide variety of off-the-shelf rich text editors.  In fact, the *only* good example[^2] of a realtime collaborative rich text editor is Google Docs.  [A](#yjs) [lot](#convergence) of libraries have focused on supporting data that can be represented by JSON, but make sure you read the documentation closely before committing to avoid any dealbreaking "gotchas".
-- Networking infrastructure.  By definition, RTC requires communication between multiple machines.  This [doesn't have to](#swellrt) follow a client-server pattern, but from the very beginning you'll have to worry about things like data security, guaranteed uptime, and scalability.  
+- Data models. The *shape* of your data heavily affects the difficulty of managing state between multiple users.  For example, one of the most common types of data, rich text, has yet to see a RTC implementation that supports a wide variety of off-the-shelf rich text editors.  In fact, the *only* good example[^2] of a realtime collaborative rich text editor is Google Docs.  [A](#yjs) [lot](#convergence) of libraries have focused on supporting data that can be represented by JSON, but make sure you read the documentation closely to make sure it will support the data constructs your app will require.
+- Networking infrastructure.  By definition, RTC requires communication between multiple remote machines.  This [doesn't have to](#swellrt) follow a client-server pattern, but from the very beginning you'll have to worry about things like data security, guaranteed uptime, and scalability.  
 
 ## Platforms
 
@@ -43,10 +43,27 @@ Please [contact us](mailto:contact@convergencelabs.com) if you're interested in 
 ## Toy or experimental 
 Engineers love playing around with new technology.  To that end, the goal of these toy projects is intellectual curiosity.  This is one reason why open source has been so successful: If something doesn't work as it appears, you can read the source! Documentation missing?  Read the source!  You can see what you are getting, and probably learn a thing or two from the source.
 
-If your project is primarily driven by curiosity, by all means, check out [Automerge](#automerge) or [Yjs](#yjs) for a CRDT or OT-based open source RTC solution, respectively. The underlying algorithms are quite interesting, and you can get a simple app up and running quickly.
+If your project is primarily driven by curiosity, by all means, check out [Automerge](#automerge) or [Yjs](#yjs) for a [CRDT](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type) or [OT](https://en.wikipedia.org/wiki/Operational_transformation)-based open source RTC solution, respectively. The underlying algorithms are quite interesting, and you can get a simple app up and running quickly.
 
 ## Startups / Lean, growth-based SaaS
-Startups live and die by their speed of execution.  Yet MVPs are typically developed on a shoestring budget.  Technical founders need to be able to leverage existing technology, balancing maximum utility with 
+Startups live and die by their speed of execution.  Yet MVPs are typically developed on a shoestring budget.  Technical founders need to be able to leverage existing technology, with a balance between off-the-shelf utility and speed of integration.  Cost is another critical concern. 
+
+We've directly worked with two types of startups in this space: those with real-time collaboration as a core feature, and those treating it as an add-on differentiator.  
+
+### RTC as a core product capability
+
+Companies needing RTC from day one fall into two camps: those with existing technical expertise with RTC technology, and those knowing they'll need to get smart on it quickly.  People identifying as the former probably won't be consulting guides such as this :D but those falling into the latter category will have some difficult choices to make: 
+
+- Roll your own / use open source.  With more and more off-the-shelf API providers emerging and gaining market share, this is becoming an increasingly difficult decision.  There would be a strong argument towards needing to gain deep domain knowledge in order to make long-term architecture decisions, and building your own system would force you and your team to gain this knowledge.  That road is long, expensive and fraught with mistakes, but with the right combination of talent and perseverance it would be the right call.  
+- Buy.  When speed and getting to market quickly are paramount, it's hard to argue against using an off-the-shelf solution.  If you find product/market fit, you may be able to afford to revisit the decision, but maybe not.  
+
+Regardless of your choice, we'd recommend consulting with an expert in the space. 
+
+### RTC as a differentiating feature
+
+- Roll your own / use open source.  Everybody's situation is different, but it's harder to argue in favor of this decision in this case.  Unless you're a very large organization with deep pockets, rolling your own RTC will almost certainly be prohibitively expensive. 
+- Buy.  The cost to build RTC into your app with an off-the-shelf solution will be the lowest possible.  You can keep more of your developer cycles working on your core product, and not researching the ins and outs of data synchronization algorithms.
+- Mitigation.  Try to design your architecture such that a user's experience is minimally impacted by the failure of your RTC provider. This means keeping the RTC data flow separate from the core application's.  If there is downtime or a disconnection, you can just display a warning message and switch over to the default single-user mode.  
 
 # Commercial vs Open Source
 
