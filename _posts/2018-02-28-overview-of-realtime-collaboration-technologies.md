@@ -79,11 +79,23 @@ While having access to the code is undeniably valuable, open-source solutions te
 
 ### [Yjs](http://y-js.org/)
 
-description here...
+Yjs is a framework for shared editing.  It is structured to allow customization of storage and transports.   It uses CRDTs behind the scenes and supports a fixed set of types out of the box.
+
+#### Pros
+
+- Support for decentralized, peer-to-peer shared data editing
+- Fairly rich set of supported types: Maps/arrays, text, and rich text ([Quill](http://quilljs.com/) only)
+- Out of the box support for a variety of common UI libraries (Ace, Quill, CodeMirror, etc)
+- Offline support
+
+#### Cons
+
+- Relatively untested[^3] in production settings
+- No support for [collaborative cues](https://convergencelabs.com/blog/2017/02/building-realtime-collaborative-applications)
 
 | License | Popularity |
 | --- | --- |
-| MIT | 566 stars |
+| MIT | 587 stars |
 
 
 ### [Automerge](https://github.com/automerge/automerge)
@@ -174,6 +186,8 @@ These projects had their time in the sun but have unfortunately been abandoned o
 [^1]: The pace of innovation in the software industry wouldn't be what it is without open source, and we are hugely indebted to the OSS we use on a daily basis.  There is merit to contributing to and growing an open source codebase, but the vast majority of open source development is still funded through for-profit software companies.  We just want to remind people of what they may be getting into.
 
 [^2]: Our colleagues over at [CKEditor](https://ckeditor.com/ckeditor-5-framework/) are [well on their way](https://github.com/ckeditor/ckeditor5/releases).
+
+[^3]: [Get in touch](mailto:contact@convergencelabs.com) if you've built something significant and we'll update this!
 
 # NOTES
 
