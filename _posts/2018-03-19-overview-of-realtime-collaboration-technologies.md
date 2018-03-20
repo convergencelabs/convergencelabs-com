@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "How do I choose a realtime collaboration library?"
+title:  "Choosing a realtime collaboration library"
 description: "There are quite a few different classes of technologies to help you build a realtime collaborative application.  Find out which is the best fit for you."
-date:   2018-02-28 12:09:21 -0700
+date:   2018-03-19 12:09:21 -0700
 categories: [realtime-collaboration]
 featured_image: /assets/images/blog/ace-collab.jpg
 author: Alec LaLonde
@@ -77,38 +77,45 @@ While having access to the code is undeniably valuable, open-source solutions te
 
 ## Open Source Ad hoc Solutions
 
-### [Yjs](http://y-js.org/)
+### [Automerge](https://github.com/automerge/automerge)
 
-Yjs is a framework for shared editing.  It is structured to allow customization of storage and transports.   It uses CRDTs behind the scenes and supports a fixed set of types out of the box.
+Automerge provides automatic syncing and merging for a small set of data types.  Object, arrays, and strings are all supported.  Doesn't dictate the transport layer.  Uses CRDTs under the hood.
 
 #### Pros
 
-- Support for decentralized, peer-to-peer shared data editing
-- Fairly rich set of supported types: Maps/arrays, text, and rich text ([Quill](http://quilljs.com/) only)
-- Out of the box support for a variety of common UI libraries (Ace, Quill, CodeMirror, etc)
+- Peer-to-peer, decentralized support with the MPL (Magic Persistence Layer) library
+- Change history
 - Offline support
 
 #### Cons
 
-- Relatively untested[^3] in production settings
-- No support for [collaborative cues](https://convergencelabs.com/blog/2017/02/building-realtime-collaborative-applications)
+- No rich text support
+- No authentication or authorization support
+- Lack of integrity checking may lead to unchecked, corrupted edits
+
 
 | License | Popularity |
 | --- | --- |
-| MIT | 587 stars |
-
-
-### [Automerge](https://github.com/automerge/automerge)
-
-description here...
-
-| License | Popularity |
-| --- | --- |
-| MIT | 5k stars |
+| MIT | 5172 stars |
 
 ### [SwellRT](http://swellrt.org/)
 
-description here...
+SwellRT is an open source backend-as-a-service designed to ease building realtime collaborative applications.  It is a fork of the now-defunct [Apache Wave](http://incubator.apache.org/wave/) project, which was originally open-sourced when Google Wave shut down.
+
+SwellRT is OT-based, and thus requires a master node to preserve a global order of operations.  [It claims to be decentralized](https://github.com/P2Pvalue/swellrt/wiki/Comparing-SwellRT-with-Etherpad#scalability) but it has yet to be proven.
+
+SwellRT is also the technology powering Jetpad, a realtime collaborative rich text editor.  Unfortunately the UI appears to be tightly tied to the backend implementation.
+
+#### Pros
+
+- Built-in user management and authentication
+- Included storage with MongoDB
+
+#### Cons
+
+- Relatively untested in production
+- No support for [collaborative cues](https://convergencelabs.com/blog/2017/02/building-realtime-collaborative-applications)
+
 
 | License | Popularity |
 | --- | --- |
@@ -151,15 +158,57 @@ The Flip framework was extracted from Ohm Studio, a richly featured digital audi
 
 ### [ShareDB (formerly ShareJS)](https://github.com/share/sharedb)
 
-description here...
+ShareDB is an open-source realtime backend. It uses OT to synchronize data.  [This repository] contains the types supported by ShareDB: JSON, plain text, and rich-text (scoped to work with Quill).
+
+#### Pros
+
+- Used in several production systems
+- Extensible via middleware with community-provided modules for authorization, etc.
+- Flexible storage options
+- Offline support
+
+#### Cons
+
+- Supporting other data types requires writing transforms from scratch, which is extremely time-intensive and error-prone
+- No support for [collaborative cues](https://convergencelabs.com/blog/2017/02/building-realtime-collaborative-applications)
 
 | License | Popularity |
 | --- | --- |
 | MIT | 1.7k stars |
 
+
+### [Yjs](http://y-js.org/)
+
+Yjs is a framework for shared editing.  It is structured to allow customization of storage and transports.   It uses CRDTs behind the scenes and supports a fixed set of types out of the box.
+
+#### Pros
+
+- Support for decentralized, peer-to-peer shared data editing
+- Fairly rich set of supported types: Maps/arrays, text, and rich text ([Quill](http://quilljs.com/) only)
+- Out of the box support for a variety of common UI libraries (Ace, Quill, CodeMirror, etc)
+- Offline support
+
+#### Cons
+
+- Relatively untested[^3] in production settings
+- No support for [collaborative cues](https://convergencelabs.com/blog/2017/02/building-realtime-collaborative-applications)
+- No authentication or authorization support
+
+| License | Popularity |
+| --- | --- |
+| MIT | 587 stars |
+
+
 ### [Convergence](https://convergence.io)
 
-We of course couldn't write this article without mentioning our own horse! Convergence is the first and only all-in-one turnkey solution for adding realtime collaboration to web applications.  After designing and implementing many realtime collaborative applications, Convergence was built to deliver the functionality that _every_ RTC app needs.  Where almost every library in this list only addresses the data synchronization problem, Convergence goes beyond, providing APIs for building collaboration awareness, presence, and chat. 
+We of course couldn't write this article without mentioning our own horse! Convergence is the first and only all-in-one turnkey solution for adding realtime collaboration to web applications.  After designing and implementing many realtime collaborative applications, Convergence was built to deliver the functionality that _every_ RTC app needs.  
+
+#### Collaborative Cues
+Where every library in this list only addresses the data synchronization problem, Convergence goes beyond, providing APIs for building collaboration awareness, presence, and chat.  Any usable multi-user application will need some sort of collaborative cueing to help users avoid conflicts, and Convergence provides APIs for references and activities.
+
+#### Pros and Cons
+
+The primary advantage to Convergence is that it is a full-fledged backend-as-as-service, so you get storage, user management, and authentication/authorization a la Firebase.  The primary disadvantage is that it is closed-source, though this comes with its own advantages, like guaranteed support.  Some folks don't want to trust their backend to a for-profit company, and we respect that. That's why this guide exists.
 
 | License | 
 | --- | 
