@@ -30,10 +30,10 @@ layout: default
 
         <!-- Meta data -->
         <div class="post-meta">
-          <a href="#" class="post-date">
+          <span class="post-date">
             <i class="fa fa-calendar-o"></i>
             <span>{{ page.date | date: "%B %d, %Y" }}</span>
-          </a>
+          </span>
           <span class="post-author">By {{page.author}}</span>
         </div><!-- / .meta -->
 
@@ -80,7 +80,7 @@ layout: default
         <h5 class="header-widget">Categories</h5>
         <ul class="tag-list">
           {% for category in page.categories %}
-          <li><a href="/blog/category/{{category}}/">{{category}}</a></li>
+          <li><a href="/blog/category/{{category | slugify}}/">{{category}}</a></li>
           {% endfor %}
         </ul>
       </div>

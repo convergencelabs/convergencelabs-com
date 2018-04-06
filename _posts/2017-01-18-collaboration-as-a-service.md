@@ -4,7 +4,7 @@ title:  "Collaboration as a Service"
 description: Here at Convergence Labs, we throw around the term “Collaboration as a Service” quite a bit. So what do we mean by it?
 author: Alec LaLonde
 date:   2017-01-18 15:09:21 -0700
-categories: realtime-collaboration
+categories: [realtime collaboration]
 featured_image: /assets/images/blog/whiteboard.jpg
 excerpt_separator: <!--excerpt-->
 ---

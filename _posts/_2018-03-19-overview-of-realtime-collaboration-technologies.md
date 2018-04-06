@@ -3,7 +3,7 @@ layout: post
 title:  "Choosing a realtime collaboration library"
 description: "There are quite a few different classes of technologies to help you build a realtime collaborative application.  Find out which is the best fit for you."
 date:   2018-03-19 12:09:21 -0700
-categories: [realtime-collaboration]
+categories: [realtime collaboration]
 featured_image: /assets/images/blog/ace-collab.jpg
 author: Alec LaLonde
 excerpt_separator: <!--excerpt-->

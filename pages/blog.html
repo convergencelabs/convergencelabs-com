@@ -75,7 +75,7 @@ pagination:
         <h5 class="header-widget">Categories</h5>
         {% for category in site.categories %}
         <div class="widget-item">
-          <a href="/blog/category/{{category[0]}}/">{{ category[0] | capitalize }} <span>({{category[1].size}})</span></a>
+          <a href="/blog/category/{{category[0] | slugify}}/">{{ category[0] | capitalize }} <span>({{category[1].size}})</span></a>
         </div>
         {% endfor %}
       </div><!-- / .categories-widget -->
