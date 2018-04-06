@@ -6,10 +6,7 @@ author: Alec LaLonde
 date:   2017-02-05 15:09:21 -0700
 categories: [realtime collaboration]
 featured_image: /assets/images/blog/car-schematic.jpg
-excerpt_separator: <!--excerpt-->
 ---
-Over the last five years there’s been a huge amount of activity around developer tools for realtime applications. The tools for realtime collaborative editing, however, haven’t kept pace. We discuss what’s required to build an effective realtime collaborative application.
-<!--excerpt-->
 
 Over the last five years there’s been a huge amount of activity around developer tools for realtime applications. In 2012 Firebase took frontend developers by storm, showing how easy it could be to synchronize data in real time across myriad devices and platforms. A whole cadre of supporting tools such as Pusher and RethinkDB started addressing the new needs of real time app developers with first class support for things like data streams and asynchronous messaging. These are wonderful tools that have significantly raised the bar for what a web application is expected to do.
 

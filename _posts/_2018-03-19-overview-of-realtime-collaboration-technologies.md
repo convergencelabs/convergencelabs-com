@@ -6,10 +6,8 @@ date:   2018-03-19 12:09:21 -0700
 categories: [realtime collaboration]
 featured_image: /assets/images/blog/ace-collab.jpg
 author: Alec LaLonde
-excerpt_separator: <!--excerpt-->
 ---
-There are quite a few different classes of technologies to help you build a realtime collaborative application.  Find out which is the best fit for you.
-<!--excerpt-->
+
 Here at Convergence Labs, we're excited to witness the increased adoption of realtime collaboration in software across the entire industry. This has given rise to a whole suite of technology solutions to help developers get their needs met, no matter the size and scale of their applications.  
 
 Of course, Convergence is one of those technology solutions, but this post is not about selling you on Convergence.  We think it can provide a massive amount of value to a large set of people, but it's certainly not the best fit for everyone. So let's dive into a few use cases and give you a framework to make good technology provider decisions.

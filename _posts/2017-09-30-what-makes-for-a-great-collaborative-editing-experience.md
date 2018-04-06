@@ -6,10 +6,8 @@ date:   2017-09-30 15:09:21 -0700
 categories: [ux, design, realtime collaboration]
 featured_image: /assets/images/blog/laptop-typing.jpg
 author: Alec LaLonde
-excerpt_separator: <!--excerpt-->
 ---
-We have built a lot of collaborative apps over the years, and with the modest goal of making collaborative apps incrementally better, would like to share what we’ve learned with the community.
-<!--excerpt-->
+
 Any application involving shared data can benefit from collaborative editing. Yet the ability to simultaneously work on the same document while not stepping on one another’s toes is tricky, and there are not a lot of good examples out there. Unfortunately, there are an awful lot of poor implementations of collaborative editing, which can lead people to opt out in favor of a more non-realtime approach, or worse, abandon the idea altogether. We have built a lot of collaborative apps over the years, and with the modest goal of making collaborative apps incrementally better, would like to share what we’ve learned with the community. After all, you wouldn’t want to waste the effort of implementing shared editing support by pissing off your users!
 
 # Conflicts are hard to deal with, so try to avoid them entirely

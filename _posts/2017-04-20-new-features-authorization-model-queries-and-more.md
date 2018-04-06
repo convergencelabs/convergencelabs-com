@@ -6,10 +6,8 @@ date:   2017-04-20 15:09:21 -0700
 categories: Convergence
 featured_image: /assets/images/blog/update.jpg
 author: Michael MacFadden
-excerpt_separator: <!--excerpt-->
 ---
-We have been hard at work adding several major new features in the platform that have been keeping us busy 24×7. See what we have been up to.
-<!--excerpt-->
+
 # What’s New?
 Some of our followers noticed that we hadn’t had a blog post in over a month, and were wondering what we were up to. We have been hard at work adding several major new features in the platform that have been keeping us busy 24×7. The good news is we have launched these features which significantly increase the value and utility of the platform. We thought it was a good time to take a breath and update the community on what’s been released:
 

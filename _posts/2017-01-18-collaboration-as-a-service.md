@@ -6,10 +6,7 @@ author: Alec LaLonde
 date:   2017-01-18 15:09:21 -0700
 categories: [realtime collaboration]
 featured_image: /assets/images/blog/whiteboard.jpg
-excerpt_separator: <!--excerpt-->
 ---
-Here at Convergence Labs, we throw around the term “Collaboration as a Service” quite a bit. So what do we mean by it?
-<!--excerpt-->
 
 Here at Convergence Labs, we throw around the term “Collaboration as a Service” quite a bit. So what do we mean by it? The SaaS ([Software-as-a-Service](https://en.wikipedia.org/wiki/Software_as_a_service)) model of providing software has become the norm. Everything is moving to the Cloud, and the various pieces of infrastructure required to build applications are moving along with it. This has resulted in a variety of IaaS (Intrastructure-as-a-Service) offerings such as [AWS](https://en.wikipedia.org/wiki/Amazon_Web_Services), [Azure](https://en.wikipedia.org/wiki/Microsoft_Azure) and [Google App Engine](https://en.wikipedia.org/wiki/Google_App_Engine), which exist so that you don’t need to be an expert in hosting, deploying, scaling, and securing web-based software. Just run a few scripts and your app is live.
 

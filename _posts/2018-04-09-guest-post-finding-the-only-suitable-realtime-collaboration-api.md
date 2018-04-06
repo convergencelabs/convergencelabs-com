@@ -6,10 +6,9 @@ date: 2018-04-06
 categories: [realtime collaboration, guest posts]
 featured_image: /assets/images/blog/corkboard.jpg
 author: Jochen Kamuf
-excerpt_separator: <!--excerpt-->
+crosspost_to_medium: true
 ---
-One of Convergence's early alpha users reports on navigating the realtime collaboration API landscape and choosing Convergence to build out a complex app.
-<!--excerpt-->
+
 _During our alpha release stage, we had a variety of different users build different applications with rather varying requirements.  One of our early users, Jochen, had an interesting journey to get to a working solution, so we reached out to him to talk about his experience.  Jochen, a German native, is not a native English-speaker, so we have done some copy editing but otherwise left his story intact._
 
 "I am Jochen Kamuf, a former Computer Science student in Germany.  I decided to write my master thesis about how a personal information management application could be expanded to be multi-user and collaborative. In order to prove my theoretical analysis of how a group of people could share their information and work collaboratively on a digital corkboard, I decided to program a working prototype that implements my theoretical aspects. Of course I would use my already developed app for personal information management as a template.

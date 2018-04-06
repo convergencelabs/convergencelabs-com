@@ -6,10 +6,7 @@ author: Michael MacFadden
 date:   2017-02-13 15:09:21 -0700
 categories: [realtime collaboration]
 featured_image: /assets/images/blog/right-left-brain.jpg
-excerpt_separator: <!--excerpt-->
 ---
-Over the past few years, “collaboration” has become a buzzword, not just in the software industry but the business world at large. In this post we discuss our take on what this means in terms of an enhanced experience for application users.
-<!--excerpt-->
 
 Over the past few years, “collaboration” has become a buzzword, not just in the software industry but the business world at large.  This is in part due to the highly networked and connected world we find ourselves in.  We are more strongly connected to each other by technology than ever before.  Likewise, “real time” has crept into the marketing feature list of many software applications.  This is in part due to ever-increasing internet speeds as well as greater choice in related software libraries. Unfortunately, the prevalence of these two  _separate_  terms in describing software applications somewhat obfuscates the meaning of the combined term  **Real Time Collaboration**. In this post we discuss our take on what this means in terms of an enhanced experience for application users. We’ll look at each term separately and then take them as a whole.
 

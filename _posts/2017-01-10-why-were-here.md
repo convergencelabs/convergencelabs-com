@@ -6,10 +6,7 @@ author: Michael MacFadden
 date:   2017-01-10 15:09:21 -0700
 categories: general
 featured_image: /assets/images/blog/blank-page.jpg
-excerpt_separator: <!--excerpt-->
 ---
-We hope developers will use Convergence to build the next generation of applications that inevitably support highly interactive, realtime collaboration, and we believe that if we are successful people’s lives will be better in ways we can’t yet imagine.
-<!--excerpt-->
 
 We live in a world where persistent high-speed network access is becoming prevalent across much of the globe. Where users can walk around with mobile devices containing unparalleled amounts of computing capability. Social networks, sharing economies, and network-enabled applications have warmed users up to the idea of interacting though their digital personas. This increase in global connectivity has lead to a dramatic increase in things like geographically distributed teams (e.g. remote workers), distance learning, and tele-medicine.
 

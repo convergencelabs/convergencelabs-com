@@ -2,9 +2,7 @@
 layout: default
 ---
 
-{% assign content_array = page.content | split: page.excerpt_separator %}
-{% assign excerpt_only = content_array | first %}
-{% assign post_content = content_array | last %}
+{% assign post_content = page.content %}
 {% assign post_url= page.url | prepend:site.url %}
 
 <!-- ========== Single Blog Post ========== -->
@@ -33,7 +31,7 @@ layout: default
           <span class="post-date">
             <i class="fa fa-calendar-o"></i>
             <span>{{ page.date | date: "%B %d, %Y" }}</span>
-          </span>
+          </a>
           <span class="post-author">By {{page.author}}</span>
         </div><!-- / .meta -->
 

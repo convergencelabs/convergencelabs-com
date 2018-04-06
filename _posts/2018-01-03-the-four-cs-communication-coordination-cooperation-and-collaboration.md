@@ -6,10 +6,8 @@ date:   2018-01-03 15:09:21 -0700
 categories: [design, realtime collaboration, ux]
 featured_image: /assets/images/blog/letter-c.png
 author: Michael MacFadden
-excerpt_separator: <!--excerpt-->
 ---
-When designing user interfaces for multi-user software products, keep in mind the 4 Cs. 
-<!--excerpt-->
+
 <p>Designing and developing great software systems that allow users to effectively work together is no easy task. Doing so requires a solid grasp of several fundamental concepts in so-called “groupware” systems.  One such concept is an understanding of the ways in which people tend to interact with each other while working together. In the physical world, this is governed by the relationships between them, their individual skill sets, their world views, their shared understanding (or lack thereof) and a variety of external influences such as overarching organizational roles and policies. These factors also apply to user interactions facilitated by software, and can be segmented into one or more “interaction modalities”. Understanding these modalities of interaction and how they relate to your application’s specific use cases is crucial when building systems that support remote users working together. 
 <p>
 The model that describes how people interact put forth in this post is the “Four Cs Model" <a href="#cite-1">[1]</a><a href="#cite-2">[2]</a>. It defines four main interaction modalities: 

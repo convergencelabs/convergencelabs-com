@@ -6,10 +6,7 @@ author: Alec LaLonde
 date:   2016-11-20 15:09:21 -0700
 categories: [community, talks]
 featured_image: /assets/images/blog/utahjs.png
-excerpt_separator: <!--excerpt-->
 ---
-Last week Alec LaLonde gave a talk at the November UtahJS meetup in Salt Lake City, UT. Realtime Apps and Beyond covered the past, present, and future of web applications with a focus on Realtime, and especially Collaborative, applications.
-<!--excerpt-->
 
 Last week on Tuesday, November 15, 2016, Convergence Labs very own Alec LaLonde gave the featured presentation at the November UtahJS meetup in Salt Lake City, UT. The presentation entitled, “Realtime Apps and Beyond“, covered the past, present, and future of web applications with a focus on Realtime, and especially Collaborative, applications. The night was mostly focused on the state of the industry, modern users’ expectations, and the challenges today’s developers face when building highly interactive, collaborative apps.
 

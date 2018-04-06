@@ -111,3 +111,8 @@ jekyll-archives:
     day: '/:year/:month/:day/'
     tag: '/tag/:name/'
     category: '/blog/category/:name/'
+
+jekyll-crosspost_to_medium:
+  enabled: true
+  status: public
+  text: <p><i>Originally published at <a href="{{ url }}" rel="canonical">Convergence Labs</a>.</i></p>

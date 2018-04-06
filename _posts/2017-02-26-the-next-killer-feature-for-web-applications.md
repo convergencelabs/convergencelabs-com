@@ -6,10 +6,8 @@ author: Alec LaLonde
 date:   2017-02-26 15:09:21 -0700
 categories: [realtime collaboration]
 featured_image: /assets/images/blog/coauthoring_spreadsheet.jpg
-excerpt_separator: <!--excerpt-->
 ---
-App developers are realizing that collaboration is a must have feature going forward. See who's adding collaboration to their apps today.
-<!--excerpt-->
+
 Every week we come across another new product with realtime collaboration at its core. Two weeks ago it was [Airstory](http://www.airstory.co/). Last week it was [Dropbox Paper](https://www.dropbox.com/paper), and this week Invision’s [Craft](https://www.invisionapp.com/craft). Some of these applications intend to disrupt current major players, and others are built from the ground up to address an unsatisfied need. Regardless, these innovative apps are hugely exciting. Not just to validate our vision of a realtime web, but excitement around people finally getting the tools they need to collaborate, regardless of where they are in the world. Tools to unlock the massive creative potential of humanity, without the restrictions of physical location.
 
 The last five years have been hugely exciting for web development, not just because of the blistering pace of technical innovation but the mind-blowingly feature-rich apps being built on top of it. Let’s take a look at some of the recent announcements:

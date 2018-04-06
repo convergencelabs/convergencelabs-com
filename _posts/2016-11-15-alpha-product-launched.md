@@ -6,10 +6,7 @@ author: Michael MacFadden
 date:   2016-11-15 15:09:21 -0700
 categories: Convergence
 featured_image: /assets/images/blog/alpha.png
-excerpt_separator: <!--excerpt-->
 ---
-We are excited to announce that our production servers are up and running. The team has spent the last few weeks ironing out the kinks, and we are now opening up the product to our first set of users.
-<!--excerpt-->
 
 We are excited to announce that our production servers are up and running. The team has spent the last few weeks ironing out the kinks, and we are now opening up the product to our first set of users. We have accumulated quite a few users who have been eagerly awaiting the product launch. Of first priority will be supporting those initial users who we have been working with for the past several months. However, we are interested in getting some fresh eyes on the product.
 

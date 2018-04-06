@@ -6,10 +6,8 @@ date:   2017-03-20 15:09:21 -0700
 author: Alec LaLonde
 categories: startups
 featured_image: /assets/images/blog/board-game-start.jpg
-excerpt_separator: <!--excerpt-->
 ---
-You’ve got a great idea for an app. You’ve even talked to dozens of potential customers about the idea. It’s time to build an MVP, and fast — but how?
-<!--excerpt-->
+
 You’ve got a great idea for an app. And since you know that an idea in a vacuum is meaningless, you’ve done your diligence. You’ve talked to dozens of potential customers about the idea, and while the response hasn’t been quite what you had hoped for, there is definitely still interest, and even a few people have agreed that Yes, they would buy something like that. But in most cases, when you verbally explain how it would work, people kind of get it, but they don’t have your vision. You’re sure that a real, functioning prototyped app would push them from “huh, interesting” to “wow! I never thought this kind of thing was possible.” There’s not really any way around actually building out some key functionality to really test people’s response. It’s time to build out an MVP.
 
 There’s a problem, though. Sure, you’ve built and shipped plenty of web apps, but most of them were relatively run-of-the-mill CRUD apps. Each supported a single user working alone, managing data through REST calls. But this idea involves multiple users working in the same canvas at the same time. Users will need to know who is working on what, and the system will have to synchronize changes to the shared data in real time.
