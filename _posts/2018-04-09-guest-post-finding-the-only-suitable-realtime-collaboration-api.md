@@ -7,6 +7,8 @@ categories: [realtime collaboration, guest posts]
 featured_image: /assets/images/blog/corkboard.jpg
 author: Jochen Kamuf
 crosspost_to_medium: true
+tags: [convergence, api]
+share: facebook twitter --twitter-hashtags linkedin
 ---
 
 _During our alpha release stage, we had a variety of different users build different applications with rather varying requirements.  One of our early users, Jochen, had an interesting journey to get to a working solution, so we reached out to him to talk about his experience.  Jochen, a German native, is not a native English-speaker, so we have done some copy editing but otherwise left his story intact._
