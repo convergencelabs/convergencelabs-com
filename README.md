@@ -1,12 +1,11 @@
 # convergencelabs.com website
 This repository hosts the source for the convergencelabs.com. The website is built using the [jeykll](https://jekyllrb.com/) static site generator. The site is ultimately packaged up into a docker container built using the supplied jenkinsfile.
 
-
 ## Dependencies
 
+ * ruby, gem
  * jeykll >= 3.6.x
  * docker
-
 
 ## Development Setup
 
@@ -14,12 +13,17 @@ This repository hosts the source for the convergencelabs.com. The website is bui
  * bundle exec jekyll serve --incremental
  * Open http://localhost:4000
 
-
 ## Jekyll Build
 If you just want to build the site run `jekyll build`. The site will be generated into the `_site` directory.
 
 ## Docker Build
 If you just want to build the site run `docker build -t convergencelabs-com .`. The site will be generated into the `_site` directory.
+
+## Deployment
+To deploy on Arvixe:
+
+* JEKYLL_ENV=production jekyll build
+* cd scripts && sh deploy.sh
 
 ## Cross-posting to Medium 
 We're using a customized version of the [`jekyll-crosspost-to-medium`](https://github.com/aarongustafson/jekyll-crosspost-to-medium) plugin.
