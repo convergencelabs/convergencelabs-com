@@ -42,6 +42,20 @@
         </div>
       </div>   
     </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="email" class="required">Email</label>
+          <input id="email" type='text' class="form-control" maxlength='100' name='Email' />
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input id="phone" type='text' class="form-control" maxlength='30' name='Phone' />
+        </div>
+      </div>
+    </div>
     <div class="form-group">
       <label for="description" class="required">What do you need?</label>
       <textarea id="description" class="form-control" name='Description' maxlength='32000' rows="6">&nbsp;</textarea>
@@ -65,8 +79,8 @@
     </div>
 
     <script>
-      var mndFileds=new Array('Company','Last Name','Lead Status');
-      var fldLangVal=new Array('Company','Last Name','Lead Status');
+      var mndFileds=new Array('First Name','Last Name','Company','Email','Description','Lead Status');
+      var fldLangVal=new Array('First Name','Last Name','Company','Email','Description','Lead Status');
       var name='';
       var email='';
   
