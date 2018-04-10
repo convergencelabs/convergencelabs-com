@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "linea-icon-font";
-  src:url("../fonts/linea-icon-font.eot");
-  src:url("../fonts/linea-icon-font.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/linea-icon-font.woff") format("woff"),
-    url("../fonts/linea-icon-font.ttf") format("truetype"),
-    url("../fonts/linea-icon-font.svg#linea-icon-font") format("svg");
+  src:url("fonts/linea-font/fonts/linea-icon-font.eot");
+  src:url("fonts/linea-font/fonts/linea-icon-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-font/fonts/linea-icon-font.woff") format("woff"),
+    url("fonts/linea-font/fonts/linea-icon-font.ttf") format("truetype"),
+    url("fonts/linea-font/fonts/linea-icon-font.svg#linea-icon-font") format("svg");
   font-weight: normal;
   font-style: normal;
 

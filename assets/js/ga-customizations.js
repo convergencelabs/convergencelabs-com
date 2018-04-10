@@ -5,7 +5,7 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     name: 'prod', 
     trackingId: 'UA-84372428-1'
   }, {
-    name: 'test', 
+    name: 'test',
     trackingId: 'UA-84372428-4'
   }];
 

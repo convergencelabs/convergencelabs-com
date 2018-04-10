@@ -23,7 +23,8 @@ group :jekyll_plugins do
   gem "jekyll-archives", "~> 2.1.1"
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-sitemap", "~> 1.1.1"
-  gem "jekyll-social", "~> 1.0.0.pre"
+  gem "jekyll-assets", "~> 3.0.8"
+  gem "uglifier", "~> 4.1.8"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

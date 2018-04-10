@@ -15,7 +15,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-archives
   - jekyll-sitemap
-  - jekyll-social
+  - jekyll-assets
 
 permalink: /blog/:year/:month/:slug/
 
@@ -23,7 +23,7 @@ keep_files:
   - assets/fonts
   - assets/images
   - assets/js
-  - assets/styles/vendor
+  - assets/css/vendor
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -117,13 +117,3 @@ jekyll-crosspost_to_medium:
   enabled: true
   status: public
   text: <p><i>Originally published at <a href="{{ url }}" rel="canonical">Convergence Labs</a>.</i></p>
-
-jekyll-social:
-  defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-  twitter_format: "@title: @url@tags"
-  twitter_url_length: 22
-  twitter_max_length: 280
