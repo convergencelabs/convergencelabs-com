@@ -1,0 +1,9 @@
+{% if page.subnav %}
+<ul>
+  {% for item in page.subnav %}
+  <li>
+    <a href="{{ item.url }}">{{ item.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

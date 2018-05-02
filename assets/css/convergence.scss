@@ -195,6 +195,15 @@
   font-size: 1.25em;
   margin-bottom: 0.5em;
 }
+
+#blog .affix {
+  top: 100px;
+}
+
+.affix-bottom {
+  position: relative;
+}
+
 .evergreen-post-content {
   h1, h2, h3, h4 { 
     text-transform: none; 
@@ -202,4 +211,22 @@
     color: #555;
     margin: 1em 0 0.5em;
   }
+
+  table {
+    margin-top: 1em;
+
+    td, th {
+      padding-right: 1em;
+    }
+  }
+
+  .solution-category {
+    margin-top: 2em;
+    text-transform: uppercase;
+  }
+
+}
+
+.sidebar-nav-widget {
+  
 }

@@ -105,6 +105,7 @@ DEPENDENCIES
   jekyll-paginate-v2 (~> 1.7)
   jekyll-sitemap (~> 1.1.1)
   minima (~> 2.0)
+  nokogiri (~> 1.8.2)
   tzinfo-data
   uglifier (~> 4.1.8)
 

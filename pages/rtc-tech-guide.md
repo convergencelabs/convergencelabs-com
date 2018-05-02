@@ -2,6 +2,7 @@
 layout: evergreen-post
 title:  "Choosing a realtime collaboration library"
 permalink: /realtime-collaboration-technology-guide/
+generate_subnav: true
 ---
 
 Here at Convergence Labs, we’re excited to witness the increased adoption of realtime collaboration in software across the entire industry. This has given rise to a whole suite of technology solutions to help developers get their needs met, no matter the size and scale of their applications. 
@@ -83,7 +84,9 @@ While having access to the code is undeniably valuable, open-source solutions te
 # Solution RoundUp
 We've attempted to categorize each library/framework to indicate their optimal use case.
 
-## Open source ad hoc solutions{:.solution-category}
+{:.solution-category}
+## Open source libraries 
+These libraries tend to focus entirely on the data synchronization piece of realtime collaboration.  They are small and do the data sync well, but you are on your own for additional concerns like authentication, access control, and [collaborative UX support](/blog/2017/02/building-realtime-collaborative-applications).
 
 
 ### [Automerge](https://github.com/automerge/automerge)
@@ -102,10 +105,97 @@ Automerge provides automatic syncing and merging for a small set of data types. 
 - No authentication or authorization support
 - Lack of integrity checking may lead to unchecked, corrupted edits
 
-
 | License | Popularity |
 | --- | --- |
 | MIT | 5172 stars |
+
+
+### [Yjs](http://y-js.org/)
+
+Yjs is a framework for shared editing.  It is structured to allow customization of storage and transports.   It uses CRDTs behind the scenes and supports a fixed set of types out of the box.
+
+#### Pros
+
+- Support for decentralized, peer-to-peer shared data editing
+- Fairly rich set of supported types: Maps/arrays, text, and rich text ([Quill](http://quilljs.com/) only)
+- Out of the box support for a variety of common UI libraries (Ace, Quill, CodeMirror, etc)
+- Offline support
+
+#### Cons
+
+- Relatively untested[^2] in production settings
+- No support for [collaborative cues](https://convergencelabs.com/blog/2017/02/building-realtime-collaborative-applications)
+- No authentication or authorization support
+
+| License | Popularity |
+| --- | --- |
+| MIT | 587 stars |
+
+
+{:.solution-category}
+## Specialty solutions
+
+These are categorized separately as they take a unique approach to the problem.  The first two do DOM-level synchronization, while Flip was designed for complex use cases.
+
+### [TogetherJS](https://togetherjs.com/)
+
+TogetherJS was a Mozilla Labs project aiming to make it "surprisingly easy" to add realtime collaboration to a website.  Essentially, it synchronizes DOM state between multiple browsers (See Webstrates below for some pitfalls of this approach).  It is open source and provides a UI widget with text chat and rudimentary audio chat to get developers going quickly.
+
+It has a few rather large users including [JSFiddle](https://jsfiddle.net/) and [.NET Fiddle](http://dotnetfiddle.net/).
+
+The original creator of TogetherJS, [Mozilla Labs](http://www.mozillalabs.com/), is unfortunately no longer active, and [the project is in need of a maintainer](https://github.com/mozilla/togetherjs/issues/1127).
+
+| License | Popularity |
+| --- | --- |
+| Mozilla Public License, Version 2.0 | 6k stars |
+
+
+### [Webstrates](https://webstrates.github.io)
+
+Similar to TogetherJS, Webstrates does DOM-level synchronization.  It also includes a general purpose messaging framework between connected clients.  The actual data synchronization is performed behind the scenes by ShareDB.
+
+DOM syncing is a fairly straightforward approach towards providing a feel of realtime collaboration.  However, web developers have for a long time been aware of the drawbacks of basing their applications on the DOM rather than a domain-specific javascript model. 
+
+| License | Popularity |
+| --- | --- |
+| Apache 2.0 | 73 stars |
+
+
+### [Flip](https://irisate.com/)
+
+The Flip framework was extracted from Ohm Studio, a richly featured digital audio workstation with realtime collaboration at its core.  It is attacking the problem from a depth-first perspective, with heavy use of system invariants and a focus on guaranteed resolution for complex data types.
+
+There curently isn't a lot of public information about the framework.
+
+| License | 
+| --- | 
+| Proprietary |
+
+
+{:.solution-category}
+## General-purpose solutions
+
+These frameworks provide the majority of what most applications would need out of the box.  Convergence is the most full-featured, while ShareDB has been around for a long time and is thus fairly well-proven.
+
+### [ShareDB (formerly ShareJS)](https://github.com/share/sharedb)
+
+ShareDB is an open-source realtime backend. It uses OT to synchronize data.  [This repository] contains the types supported by ShareDB: JSON, plain text, and rich-text (scoped to work with Quill).
+
+#### Pros
+
+- Used in several production systems
+- Extensible via middleware with community-provided modules for authorization, etc.
+- Flexible storage options
+- Offline support
+
+#### Cons
+
+- Supporting other data types requires writing transforms from scratch, which is extremely time-intensive and error-prone
+- No support for [collaborative cues](https://convergencelabs.com/blog/2017/02/building-realtime-collaborative-applications)
+
+| License | Popularity |
+| --- | --- |
+| MIT | 1.7k stars |
 
 
 ### [SwellRT](http://swellrt.org/)
@@ -131,83 +221,6 @@ SwellRT is also the technology powering Jetpad, a realtime collaborative rich te
 | --- | --- |
 | Apache 2.0 | 125 stars |
 
-## Specialty Solutions{:.solution-category}
-
-### [TogetherJS](https://togetherjs.com/)
-
-TogetherJS was a Mozilla Labs project aiming to make it "surprisingly easy" to add realtime collaboration to a website.  Essentially, it synchronizes DOM state between multiple browsers (See Webstrates below for some pitfalls of this approach).  It is open source and provides a UI widget with text chat and rudimentary audio chat to get developers going quickly.
-
-It has a few rather large users including [JSFiddle](https://jsfiddle.net/) and [.NET Fiddle](http://dotnetfiddle.net/).
-
-The original creator of TogetherJS, [Mozilla Labs](http://www.mozillalabs.com/), is unfortunately no longer active, and [the project is in need of a maintainer](https://github.com/mozilla/togetherjs/issues/1127).
-
-| License | Popularity |
-| --- | --- |
-| Mozilla Public License, Version 2.0 | 6k stars |
-
-### [Webstrates](https://webstrates.github.io)
-
-Similar to TogetherJS, Webstrates does DOM-level synchronization.  It also includes a general purpose messaging framework between connected clients.  The actual data synchronization is performed behind the scenes by ShareDB.
-
-DOM syncing is a fairly straightforward approach towards providing a feel of realtime collaboration.  However, web developers have for a long time been aware of the drawbacks of basing their applications on the DOM rather than a domain-specific javascript (or typescript, etc) model.  
-
-| License | Popularity |
-| --- | --- |
-| Apache 2.0 | 73 stars |
-
-### [Flip](https://irisate.com/)
-
-The Flip framework was extracted from Ohm Studio, a richly featured digital audio workstation with realtime collaboration at its core.  It is attacking the problem from a depth-first perspective, with heavy use of system invariants and a focus on guaranteed resolution for complex data types.
-
-| License | 
-| --- | 
-| Proprietary |
-
-
-## General-purpose solutions{:.solution-category}
-
-### [ShareDB (formerly ShareJS)](https://github.com/share/sharedb)
-
-ShareDB is an open-source realtime backend. It uses OT to synchronize data.  [This repository] contains the types supported by ShareDB: JSON, plain text, and rich-text (scoped to work with Quill).
-
-#### Pros
-
-- Used in several production systems
-- Extensible via middleware with community-provided modules for authorization, etc.
-- Flexible storage options
-- Offline support
-
-#### Cons
-
-- Supporting other data types requires writing transforms from scratch, which is extremely time-intensive and error-prone
-- No support for [collaborative cues](https://convergencelabs.com/blog/2017/02/building-realtime-collaborative-applications)
-
-| License | Popularity |
-| --- | --- |
-| MIT | 1.7k stars |
-
-
-### [Yjs](http://y-js.org/)
-
-Yjs is a framework for shared editing.  It is structured to allow customization of storage and transports.   It uses CRDTs behind the scenes and supports a fixed set of types out of the box.
-
-#### Pros
-
-- Support for decentralized, peer-to-peer shared data editing
-- Fairly rich set of supported types: Maps/arrays, text, and rich text ([Quill](http://quilljs.com/) only)
-- Out of the box support for a variety of common UI libraries (Ace, Quill, CodeMirror, etc)
-- Offline support
-
-#### Cons
-
-- Relatively untested[^3] in production settings
-- No support for [collaborative cues](https://convergencelabs.com/blog/2017/02/building-realtime-collaborative-applications)
-- No authentication or authorization support
-
-| License | Popularity |
-| --- | --- |
-| MIT | 587 stars |
-
 
 ### [Convergence](https://convergence.io)
 
@@ -218,22 +231,34 @@ Where every library in this list only addresses the data synchronization problem
 
 #### Pros and Cons
 
-The primary advantage to Convergence is that it is a full-fledged backend-as-as-service, so you get storage, user management, and authentication/authorization a la Firebase.  The primary disadvantage is that it is closed-source, though this comes with its own advantages, like guaranteed support.  Some folks don't want to trust their backend to a for-profit company, and we respect that. That's why this guide exists.
+The primary advantage to Convergence is that it is a full-fledged backend-as-as-service, so you get storage, user management, and authentication/authorization a la Firebase.  The primary disadvantage is that it is closed-source, though guaranteed support is included in most plans.  Some folks don't want to trust their backend to a for-profit company, and we respect that. That's why this guide exists.
 
 | License | 
 | --- | 
 | Proprietary |
 
+
+{:.solution-category}
 ## Related solutions
 
-For this article, we've focused on *general-purpose* RTC solutions that can be both be easily plugged into an existing codebase and support a relatively wide variety of data. However, there are a few related products out there that may fit some people's needs:
+So far we've focused on *general-purpose* RTC solutions that can be both be easily plugged into an existing codebase and support a relatively wide variety of data. However, there are a few related projects out there that may fit some people's needs:
 
-- [CKEditor 5](https://ckeditor.com/ckeditor-5-framework/) is an open-source rich text editor that supports RTC out of the box.  Still in alpha.
+### Integrated RTC web components
+
+There are a number of UI components out there that provide both the view layer and an integrated data synchronization backend.  If you have a very specific use case (say, you just need a RTC rich text editor to drop into your app) one of these may fit the bill:
+
+- [CKEditor 5](https://ckeditor.com/ckeditor-5-framework/) is an open source rich text editor that supports RTC out of the box.  Still in alpha.
+- [Firepad](https://firepad.io/) is an open source code and text editor that combines a RTC adaptor with Firebase for data storage and synchronization.  Requires a Firebase account.
+
+### End-user applications
+- [Etherpad](http://etherpad.org/) is an end-user application (Mac and Windows) that is essentially a RTC document editor.  
+- [Codox Wave](http://wave.codox.io/) takes an interesting approach to end-user collaboration.  It provides a browser extension to enhance some of the most popular web-based software such as WordPress, Gmail, Evernote, and Zendesk with RTC functionality.
 
 
+{:.solution-category}
 ## Dead/retired projects
 
-These projects had their time in the sun but have unfortunately been abandoned or explictly cancelled.  
+These projects had their time in the sun but have since been abandoned or cancelled.  
 
 - [OT.js](https://github.com/Operational-Transformation/ot.js)
 - [Apache Wave](http://incubator.apache.org/projects/wave.html)
@@ -244,22 +269,5 @@ These projects had their time in the sun but have unfortunately been abandoned o
 
 [^1]: The pace of innovation in the software industry wouldn't be what it is without open source, and we are hugely indebted to the OSS we use on a daily basis.  There is merit to contributing to and growing an open source codebase, but the vast majority of open source development is still funded through for-profit software companies.  We just want to remind people of what they may be getting into.
 
-[^2]: Our colleagues over at [CKEditor](https://ckeditor.com/ckeditor-5-framework/) are [well on their way](https://github.com/ckeditor/ckeditor5/releases).
+[^2]: [Get in touch](mailto:contact@convergencelabs.com) if you've built something significant and we'll update this!
 
-[^3]: [Get in touch](mailto:contact@convergencelabs.com) if you've built something significant and we'll update this!
-
-# NOTES
-
-Goal: Provide an overview of the existing solutions and categorize them.  Then go through a few use cases and apply a category to each.
-
-Topics:
-- type of project (toy? new? existing? usage? expected longevity?)
-  - Toy project / experiment
-  - New project or rewrite, well-funded 
-  - Feature addition to large existing project
-- buy vs build
-- Comparison matrix (how to do this mobile-friendly?)
-  - supported data types (plain text, rich text, JSON, etc)
-  - proprietary / open source
-  - group and local undo / redo
-  - Transient data support (remote cursors, remote pointers)
