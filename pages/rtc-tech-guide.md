@@ -2,6 +2,7 @@
 layout: evergreen-post
 title:  "Choosing a realtime collaboration library"
 permalink: /realtime-collaboration-technology-guide/
+featured_image: /assets/images/shelf_books.jpg
 generate_subnav: true
 ---
 

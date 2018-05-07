@@ -5,6 +5,9 @@
 @import "theme/responsive.scss";
 @import "sharing-buttons.scss"; 
 
+body {
+  position: relative;
+}
 
 #services {
   .ft-item {
@@ -198,6 +201,9 @@
 
 #blog .affix {
   top: 100px;
+  max-height: calc(100% - 200px);
+  overflow-y: auto;
+  padding-left: 2px;
 }
 
 .affix-bottom {
@@ -205,11 +211,14 @@
 }
 
 .evergreen-post-content {
+  margin-top: 2em;
+
   h1, h2, h3, h4 { 
     text-transform: none; 
     letter-spacing: normal;
     color: #555;
-    margin: 1em 0 0.5em;
+    margin-top: -30px;
+    padding: 60px 0 0.5em;
   }
 
   table {
@@ -221,12 +230,44 @@
   }
 
   .solution-category {
-    margin-top: 2em;
+    margin-top: 0;
     text-transform: uppercase;
   }
 
 }
 
-.sidebar-nav-widget {
-  
+.affixed-sidebar {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding: 0 0 0 1em;
+
+      a,a:hover,a:focus {
+        padding: 0;
+        background-color: #fff;
+        color: #777;
+      }
+      a:hover {
+        color: #337ab7;
+      }
+      &.active {
+        border-left: 2px solid #337ab7;
+        margin-left: -2px;
+
+        a {
+          color: #337ab7;
+        }
+      }
+      &.nav-h2 {
+        padding-left: 2em;
+      }
+      &.nav-h3 {
+        padding-left: 3em;
+      }
+    }
+  }
+   
 }

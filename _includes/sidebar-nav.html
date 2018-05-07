@@ -1,9 +1,19 @@
 {% if page.subnav %}
-<ul>
-  {% for item in page.subnav %}
-  <li>
-    <a href="{{ item.url }}">{{ item.title }}</a>
+<ul class="nav nav-list">
+  {% for h1 in page.subnav %}
+  <li role="presentation">
+    <a href="{{ h1.url }}">{{ h1.title }}</a>
   </li>
+    {% for h2 in h1.subnav %}
+    <li role="presentation" class="nav-h2"> 
+      <a href="{{ h2.url }}">{{ h2.title }}</a>
+    </li>
+      {% for h3 in h2.subnav %}
+      <li role="presentation" class="nav-h3"> 
+        <a href="{{ h3.url }}">{{ h3.title }}</a>
+      </li>
+      {% endfor %}
+    {% endfor %}
   {% endfor %}
 </ul>
 {% endif %}

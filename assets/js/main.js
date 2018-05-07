@@ -781,6 +781,7 @@
 
   } // initRangeSlider
 
+  // Init fixed sidebar nav
   function initSidebar() {
     function fixAffixWidth() {
       $('.affixed-sidebar').css('width', $('.affixed-sidebar').parent().width() + 'px');
@@ -789,7 +790,7 @@
       $('.affixed-sidebar').affix({
         offset: {
           top: $('.page-title').outerHeight(),
-          bottom: $('footer').outerHeight() + 100
+          bottom: $('footer').outerHeight() + 150
         }
       });
       fixAffixWidth();
@@ -797,6 +798,9 @@
     $(window).resize(initAffix);
     initAffix();
     $('.affixed-sidebar').on('affixed.bs.affix', fixAffixWidth);
+    $('body').css('position', 'relative');
+    $('body').scrollspy({target: '.affixed-sidebar'});
+
   }
 
 })(jQuery);
