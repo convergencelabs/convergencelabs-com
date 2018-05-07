@@ -9,39 +9,34 @@ class MySubnavGenerator < Jekyll::Generator
         doc = Nokogiri::HTML(parser.convert(page['content']))
         page.data["subnav"] = []
         doc.css('h1').each do |heading1|
-          # self.collect_headers()
-          h2s = []
-          # This is an XPath expression that selects all the h2s between 
-          # the h1 with the specified id and the next h1
-          xpath = "//h2[preceding-sibling::h1[1][@id=\"#{heading1['id']}\"]]"
-
-          doc.xpath(xpath).each do |heading2|
-            h3s = []
-            xpath = "//h3[preceding-sibling::h2[1][@id=\"#{heading2['id']}\"]]"
-
-            doc.xpath(xpath).each do |heading3|
-              h3s << self.build_link(heading3)
-            end
-
-            h2_link = self.build_link(heading2)
-            h2_link["subnav"] = h3s
-            h2s << h2_link
-          end
-
-          h1_link = self.build_link(heading1)
-          h1_link["subnav"] = h2s
-          page.data["subnav"] << h1_link
+          page.data["subnav"] << self.collect_headers(doc, heading1, 1, 2)
         end
       end
     end
   end
 
-  def collect_headers(header, index, max_depth)
-    child_headers = []
+  # Recursively collect header and subheader information
+  # doc       the HTML representation of the original markdown document
+  # header    the current header element (h1, h2, h3 etc)
+  # index     the current header's index
+  # max_depth the maximum header index to display (e.g. 2 will collect h2s but not h3s)
+  def collect_headers(doc, header, index, max_depth)
     if index >= max_depth
-      puts "bleh"
+      return self.build_link(header)
     else
-      xpath = "//h2[preceding-sibling::h1[1][@id=\"#{heading1['id']}\"]]"
+      child_headers = []
+      # This is an XPath expression that selects all the h2s between 
+      # the h1 with the specified id and the next h1
+      xpath = "//h#{index + 1}[preceding-sibling::h#{index}[1][@id=\"#{header['id']}\"]]"
+
+      # Collect the subheaders and recurse
+      doc.xpath(xpath).each do |sub_heading|
+        child_headers << self.collect_headers(doc, sub_heading, index + 1, max_depth)
+      end
+
+      link = self.build_link(header)
+      link["subnav"] = child_headers
+      return link
     end
   end
 
