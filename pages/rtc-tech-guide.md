@@ -5,6 +5,7 @@ permalink: /realtime-collaboration-technology-guide/
 featured_image: /assets/images/shelf_books.jpg
 generate_subnav: true
 ---
+_Last updated May 2018_
 
 Here at Convergence Labs, we’re excited to witness the increased adoption of realtime collaboration in software across the entire industry. This has given rise to a whole suite of technology solutions to help developers get their needs met, no matter the size and scale of their applications. 
 
