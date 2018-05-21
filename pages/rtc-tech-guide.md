@@ -1,6 +1,8 @@
 ---
 layout: evergreen-post
 title:  "Choosing a realtime collaboration library"
+description: "There are a number of open source and commercial software libraries, frameworks and APIs out there to help you add realtime collaboration to your app.  In this guide, we give you both a rundown of the available technologies as well as some often overlooked considerations to help you make better technology decisions."
+author: Alec LaLonde
 permalink: /realtime-collaboration-technology-guide/
 featured_image: /assets/images/shelf_books.jpg
 generate_subnav: true
@@ -39,6 +41,8 @@ Please [contact us](mailto:contact@convergencelabs.com) if you're interested in 
 
 
 ## Types of projects
+
+_What_ exactly are you building?  Will it actually have users?  How many?  The bigger and longer-term the project, the more important the choice of underlying technology.
 
 ### Trial/experimental 
 Engineers love playing around with new technology.  To that end, the goal of these toy projects is intellectual curiosity.  This is one reason why open source has been so successful: If something doesn't work as it appears, you can read the source! Documentation missing?  Read the source!  You can see what you are getting, and probably learn a thing or two from the source.
