@@ -7,7 +7,6 @@ categories: [realtime collaboration, software development]
 featured_image: /assets/images/blog/component-api.png
 author: Michael MacFadden
 crosspost_to_medium: true
-tags: [realtime collaboration, component development, convergence, apis]
 ---
 
 As software development continues its inexorable climb towards higher and higher levels of abstraction, we're increasingly using APIs to avoid writing boilerplate code.  This has required re-thinking software architecture to be able to better support extensibility and modularity.  On the server side, this trend is obviously apparent in the push towards microservices and serverless architectures, but the client side has not been able to keep pace.  We see this as a crucial impediment towards moving the state of the art forward for the user-facing components of software as well.
