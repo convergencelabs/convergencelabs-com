@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Build Developer-Friendly UI components
-description: ""
+description: "Over the latest decade or so, the majority of reusable UI components were built with solely the user in mind.  But as users demand increasingly rich experiences, modern UI components will need to also consider extensibility and programmability.  In this article we describe how to build developer-friendly UI components."
 date: 2018-05-21
 categories: [realtime collaboration, software development]
 featured_image: /assets/images/blog/component-api.png
