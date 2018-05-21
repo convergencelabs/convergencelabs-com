@@ -2,11 +2,12 @@
 layout: post
 title: How to Build Developer-Friendly UI Components
 description: "Over the latest decade or so, the majority of reusable UI components were built with solely the user in mind.  But as users demand increasingly rich experiences, modern UI components will need to also consider extensibility and programmability.  In this article we describe how to build developer-friendly UI components."
-date: 2018-05-21 13:40:21 -0700
+date: 2018-05-21 13:40:21 -0600
 categories: [realtime collaboration, software development]
 featured_image: /assets/images/blog/component-api.png
 author: Michael MacFadden
-crosspost_to_medium: false
+crosspost_to_medium: true
+tags: [realtime collaboration, component development, convergence, apis]
 ---
 
 As software development continues its inexorable climb towards higher and higher levels of abstraction, we're increasingly using APIs to avoid writing boilerplate code.  This has required re-thinking software architecture to be able to better support extensibility and modularity.  On the server side, this trend is obviously apparent in the push towards microservices and serverless architectures, but the client side has not been able to keep pace.  We see this as a crucial impediment towards moving the state of the art forward for the user-facing components of software as well.
