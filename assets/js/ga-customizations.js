@@ -67,5 +67,5 @@ $(document).ready(function () {
     });
   }
 
-  $('#menu-item-844 a').bind('click', handleOutboundLinkClicks);
+  $('.request-invite-link').bind('click', handleOutboundLinkClicks);
 });
