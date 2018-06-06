@@ -41,7 +41,8 @@ module Jekyll
         token = ENV['MEDIUM_INTEGRATION_TOKEN'] or false
 
         if ! user_id or ! token
-          raise ArgumentError, "MediumCrossPostGenerator: Environment variables not found"
+          # raise ArgumentError, "MediumCrossPostGenerator: Environment variables not found"
+          puts "MediumCrossPostGenerator: Skipping publishing because environment variables not found (MEDIUM_USER_ID / MEDIUM_INTEGRATION_TOKEN"
           return
         end
 

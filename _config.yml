@@ -36,8 +36,7 @@ exclude:
   - .sass-cache
   - README.md
   - Dockerfile
-  - nginx-default.conf
-  - _docker
+  - Jenkinsfile
   - scripts
 
 
