@@ -57,8 +57,10 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 
 
 $(document).ready(function () {
-
-/* Normally the event tracker would handle this, but we don't have access to the actual anchor element in the top menu */
+  /* 
+   * Normally the event tracker would handle this, but we don't have access to the actual
+   * anchor element in the top menu 
+   */
   function handleOutboundLinkClicks(event) {
     ga('send', 'event', {
       eventCategory: 'Outbound link click',
@@ -67,5 +69,6 @@ $(document).ready(function () {
     });
   }
 
+  // the only links this applies to are scattered throughout a few blog posts
   $('.request-invite-link').bind('click', handleOutboundLinkClicks);
 });

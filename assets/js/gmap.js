@@ -46,45 +46,32 @@ $(document).ready(function () {
     var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
-
-    var image = '/assets/images/map-pin.png';
+    function createMarker(latLng) {
+      new google.maps.Marker({
+        position: latLng,
+        map: map,
+        icon: {
+          url: '/assets/images/map-pin.png',
+          // this is relative to the icon size of 51x57
+          anchor: new google.maps.Point(26, 48) 
+        }
+      });
+    }
 
     // Sioux Falls Marker
     var siouxFalls = new google.maps.LatLng(43.5446, -96.7311);
-    new google.maps.Marker({
-      position: siouxFalls,
-      map: map,
-      icon: image
-    });
+    createMarker(siouxFalls);
 
     // Salt Lake Ciy Falls Marker
     var saltLake = new google.maps.LatLng(40.7608, -111.8910);
-    new google.maps.Marker({
-      position: saltLake,
-      map: map,
-      icon: image
-    });
+    createMarker(saltLake);
 
     // San Diego
     var sanDiego = new google.maps.LatLng(32.7157, -117.1611);
-    new google.maps.Marker({
-      position: sanDiego,
-      map: map,
-      icon: image
-    });
+    createMarker(sanDiego);
 
-    var top = 49.3457868 ;// north lat
-    var left = -124.7844079; //  west long
-    var right = -66.9513812; // east long
-    var bottom =  24.7433195; // south lat
-
-    var bounds = new google.maps.LatLngBounds();
-    bounds.extend(new google.maps.LatLng(top, left));
-    bounds.extend(new google.maps.LatLng(top, right));
-    bounds.extend(new google.maps.LatLng(bottom, left));
-    bounds.extend(new google.maps.LatLng(bottom, right));
-    map.setCenter(bounds.getCenter());
-    map.fitBounds(bounds);
+    map.setCenter(new google.maps.LatLng(38.809734, -98.555620));
+    map.setZoom(4);
   } // initGMap
 
   google.maps.event.addDomListener(window, 'load', initGMap);
