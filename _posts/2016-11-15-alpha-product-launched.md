@@ -4,7 +4,7 @@ title:  "Alpha Product Launched"
 description: Convergence Labs has been busy! The team has spent the last few weeks ironing out the kinks, and we are now opening up the product to our first set of users.
 author: Michael MacFadden
 date:   2016-11-15 15:09:21 -0700
-categories: Convergence
+categories: convergence
 featured_image: /assets/images/blog/alpha.png
 ---
 

@@ -7,7 +7,7 @@ categories: [realtime collaboration, guest posts]
 featured_image: /assets/images/blog/corkboard.jpg
 author: Jochen Kamuf
 crosspost_to_medium: true
-tags: [convergence, api]
+tags: [Convergence, api]
 share: facebook twitter --twitter-hashtags linkedin
 ---
 

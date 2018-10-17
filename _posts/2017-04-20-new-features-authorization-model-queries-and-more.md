@@ -3,7 +3,7 @@ layout: post
 title:  "New Features: Authorization, Model Queries, and More"
 description: We have been hard at work adding several major new features in the platform that have been keeping us busy 24×7. See what we have been up to.
 date:   2017-04-20 15:09:21 -0700
-categories: Convergence
+categories: convergence
 featured_image: /assets/images/blog/update.jpg
 author: Michael MacFadden
 ---
