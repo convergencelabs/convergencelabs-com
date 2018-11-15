@@ -2,11 +2,8 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 
 (function(ga) {
   var ALL_TRACKERS = [{
-    name: 'prod', 
+    name: 'clabs-com', 
     trackingId: 'UA-84372428-1'
-  }, {
-    name: 'test',
-    trackingId: 'UA-84372428-4'
   }];
 
   function createGaProxy(trackers) {
@@ -27,7 +24,10 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   }
 
   var gaAll = createGaProxy(ALL_TRACKERS);
-  var gaTest = createGaProxy(ALL_TRACKERS.slice(1));
+  var gaConvergenceIo = createGaProxy({
+    name: 'convergence-io',
+    trackingId: 'UA-84372428-6'
+  });
 
   ALL_TRACKERS.forEach(function(tracker) {
     ga('create', tracker.trackingId, 'auto', tracker.name);
@@ -53,22 +53,35 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   });
 
   gaAll('linker:autoLink', ['admin.convergence.io']);
+
+  $(document).ready(function () {
+    /* 
+     * Normally the event tracker would handle this, but we don't have access to the actual
+     * anchor element in the top menu 
+     */
+    function handleConvergenceSignupClicks(event) {
+      gaConvergenceIo('send', 'event', {
+        eventCategory: 'Outbound link click',
+        eventAction: 'Request invite',
+        eventLabel: 'Sign Up (header)'
+      });
+    }
+  
+    // the only links this applies to are scattered throughout a few blog posts
+    $('.request-invite-link').bind('click', handleConvergenceSignupClicks);
+  
+    // capture the newsletter subscription submission
+    $('.subscribe-form').submit(function() {
+      gaAll('send', 'event', {
+        eventCategory: 'Newsletter signup'
+      });
+      if (window.fbq) {
+        window.fbq('track', 'CompleteRegistration', {
+          content_name: 'newsletter'
+        });
+      }
+    });
+  });
 }(window.ga));
 
 
-$(document).ready(function () {
-  /* 
-   * Normally the event tracker would handle this, but we don't have access to the actual
-   * anchor element in the top menu 
-   */
-  function handleOutboundLinkClicks(event) {
-    ga('send', 'event', {
-      eventCategory: 'Outbound link click',
-      eventAction: 'Request invite',
-      eventLabel: 'Sign Up (header)'
-    });
-  }
-
-  // the only links this applies to are scattered throughout a few blog posts
-  $('.request-invite-link').bind('click', handleOutboundLinkClicks);
-});
