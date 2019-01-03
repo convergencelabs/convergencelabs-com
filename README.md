@@ -32,8 +32,8 @@ To execute the cross-post:
 1. Get your medium integration token from your [settings](https://medium.com/me/settings).
 1. Set a couple environment variables:
    ```
-   MEDIUM_USER_ID=8214ea30605c
-   MEDIUM_INTEGERATION_TOKEN=<token>
+   export MEDIUM_USER_ID=8214ea30605c
+   export MEDIUM_INTEGERATION_TOKEN=<token>
    ```
 1. Add `crosspost_to_medium: true` to the post header
 1. Do a `jekyll build`. The plugin automatically keeps track of what is has posted in a `.jekyll-crosspost_to_medium` directory.
