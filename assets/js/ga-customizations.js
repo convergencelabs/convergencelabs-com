@@ -32,6 +32,8 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   ALL_TRACKERS.forEach(function(tracker) {
     ga('create', tracker.trackingId, 'auto', tracker.name);
   })
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview');
 
   gaAll('require', 'eventTracker');
   gaAll('require', 'linker');
