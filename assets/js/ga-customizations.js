@@ -2,7 +2,7 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 
 (function(ga) {
   var ALL_TRACKERS = [{
-    name: 'clabs-com', 
+    name: 'convergencelabs', 
     trackingId: 'UA-84372428-1'
   }];
 
@@ -25,15 +25,13 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 
   var gaAll = createGaProxy(ALL_TRACKERS);
   var gaConvergenceIo = createGaProxy({
-    name: 'convergence-io',
+    name: 'convergenceio',
     trackingId: 'UA-84372428-6'
   });
 
   ALL_TRACKERS.forEach(function(tracker) {
     ga('create', tracker.trackingId, 'auto', tracker.name);
   })
-  ga('set', 'transport', 'beacon');
-  ga('send', 'pageview');
 
   gaAll('require', 'eventTracker');
   gaAll('require', 'linker');
