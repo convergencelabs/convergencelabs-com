@@ -16,7 +16,7 @@ At Convergence Labs we believe in a world where people can work, play, and other
 
 We have built Convergence to hasten the arrival of this vision by removing the barriers to collaborative application development. We hope developers will use Convergence to build the next generation of applications that inevitably support highly interactive, realtime collaboration, and we believe that if we are successful people’s lives will be better in ways we can’t yet imagine. A lot of startups set out determined that _they_ can change the world in some small way. We built Convergence so _you_ can change the world.
 
-So if that’s a future that you believe in too, [request an account](http://admin.convergence.io/request-invite){:.request-invite-link} and **show the world** what you can do.
+So if that’s a future that you believe in too, [try it out](https://convergence.io/start/){:.request-invite-link} and **show the world** what you can do.
 
 * * *
 

@@ -52,8 +52,6 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     trailingSlash: 'remove'
   });
 
-  gaAll('linker:autoLink', ['admin.convergence.io']);
-
   $(document).ready(function () {
     /* 
      * Normally the event tracker would handle this, but we don't have access to the actual
