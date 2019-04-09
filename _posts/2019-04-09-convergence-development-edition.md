@@ -6,7 +6,7 @@ date: 2019-04-09 10:21:01 -0700
 categories: [convergence]
 featured_image: /assets/images/blog/convergence-de.png
 author: Alec LaLonde
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 Two and a half years ago, we [opened up Convergence](https://convergencelabs.com/blog/2016/11/alpha-product-launched/) to alpha testers.  It was originally provided as a hosted Collaboration Engine; we would maintain the infrastructure and you could just write code to point to it. 
 
