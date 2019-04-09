@@ -6,7 +6,7 @@ date: 2019-03-18 21:21:21 -0700
 categories: [convergence]
 featured_image: /assets/images/blog/rc1.png
 author: Alec LaLonde
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 This is the biggest release we've ever done.
 

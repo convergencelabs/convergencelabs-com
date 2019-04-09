@@ -1,6 +1,6 @@
 .resp-sharing-button-bar {
-  text-align: center;
   margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 12px;
 
   a, a:hover, a:active, a:visited {
@@ -16,7 +16,8 @@
 .resp-sharing-button__link {
   text-decoration: none;
   color: #fff;
-  margin: 0.5em
+  margin: 0.5em;
+  margin-left: 0;
 }
 
 .resp-sharing-button {
@@ -31,7 +32,6 @@
   width: 1em;
   height: 1em;
   margin-right: 0.4em;
-  vertical-align: top
 }
 
 .resp-sharing-button--small svg {
@@ -42,7 +42,8 @@
 /* Non solid icons get a stroke */
 .resp-sharing-button__icon {
   stroke: #fff;
-  fill: none
+  fill: none;
+  vertical-align: middle;
 }
 
 /* Solid icons get a fill */
@@ -176,4 +177,10 @@
 .resp-sharing-button--linkedin:active {
   background-color: #046293;
   border-color: #046293;
+}
+
+@media (max-width: 500px) {
+  .hide-tiny {
+    display: none;
+  }
 }

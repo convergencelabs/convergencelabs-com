@@ -246,13 +246,14 @@
     }
 
     .post-author {
-      float: right;
+      margin-left: 5px;
     }
   }
   // .post-meta
 
   .blog-post-content {
-    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
     margin-bottom: $ws-s;
 
     text-align: justify;
@@ -275,6 +276,13 @@
     .right-blog-quote {
       margin: 20px -50px 20px 30px;
     }
+  }
+}
+
+@media (max-width: 350px) {
+  .blog-post-single {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
