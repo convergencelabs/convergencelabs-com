@@ -1,7 +1,7 @@
  (function ($) {
   'use strict';
 
-  var tabletWidth = 1024;
+  var tabletWidth = 768;
   var desktopWidth = 1200;
 
   /* --------------------------------------------------
@@ -84,6 +84,7 @@
 
     // Nav on mobile screens
     $(window).resize(function () {
+      /*
       if ($(window).width() < tabletWidth) {
         $('nav').addClass('mobile-nav');
       } else {
@@ -97,7 +98,7 @@
         if ($(window).width() >= tabletWidth && $(window).top) {
           $('nav').addClass('navbar-trans');
         }
-      }
+      }*/
 
       // Remove dropdown open on hover for small screens
       if ($('nav').hasClass('mobile-nav')) {
