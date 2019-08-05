@@ -25,6 +25,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap", "~> 1.1.1"
   gem "jekyll-assets", "~> 3.0.8"
   gem "uglifier", "~> 4.1.8"
+  gem 'jekyll-build-notifier'
 end
 
 gem "nokogiri", "~> 1.8.2"

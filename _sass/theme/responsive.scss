@@ -56,6 +56,10 @@
   .sec-heading { 
     margin-bottom: 50px;
   }
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 }
 
 
@@ -76,14 +80,10 @@
 				
 				&:hover {
 					background: none;
-
-					span {
-						background: $dark;
-					}
 				}
 
 				span {
-					background: $gray-light;
+					background: $convergence-blue;
 					transition: background .3s;
 				}
 			}
@@ -94,7 +94,7 @@
 			padding-right: 25px;
 			max-height: 100%;
 			border: none;
-			box-shadow: none;
+      box-shadow: none;
 
 			.navbar-nav {
 				padding-left: 15px;
@@ -140,10 +140,6 @@
 				margin-top: 15px;
 			}
     }
-    
-    .navbar-collapse {
-			margin-top: 15px;
-    }
 	}
 
 	.navbar-inverse {
@@ -182,6 +178,7 @@
 		.navbar-header {
 			.navbar-brand {
         font-size: 1.6em;
+        padding-top: 8px;
       }
     }
     .navbar-collapse {
@@ -191,6 +188,14 @@
       }
     }
   }
+
+  nav:not(.navbar-small) {
+    .navbar-collapse {
+      .navbar-nav {
+        padding-top: 5px;
+      } 
+    }
+	}
 }
 
 @media (max-width: $screen-xs) {
@@ -211,7 +216,18 @@
     }
   }
   .navbar-small {
-    padding-top: 5px;
+    // padding-top: 5px;
+		.navbar-header {
+			.navbar-brand {
+        padding-top: 8px;
+      }
+    }
+  }
+
+  .navbar-trans {
+    .navbar-collapse {
+      background: rgba(0, 0, 0, 0.8);
+    }
   }
 
   nav:not(.navbar-small) {
@@ -219,6 +235,14 @@
       .navbar-toggle {
         margin-top: 12px;
       }
+    }
+  }
+
+  .convergence-io-widget {
+    a {
+      display: inline-block;
+      /* google complains about small click sizes */
+      line-height: 3em;
     }
   }
 }
@@ -1505,7 +1529,7 @@
     .hero-content {
 
       .hero-lead {
-        font-size: 3em;
+        font-size: 2.5em;
 
         br {
           display: none;
