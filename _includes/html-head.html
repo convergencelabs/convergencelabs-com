@@ -15,12 +15,32 @@
   <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-16x16.png" sizes="16x16">
+
   <!-- Bootstrap -->
   {% asset application.css %}
-  <!-- Fonts -->
-  {% asset fonts.css %}
+  <!-- <link href="{% asset application.css @path %}" rel="preload" as="style"> -->
 
-  <link href="/assets/css/convergence.css" rel="stylesheet">
+  {% asset convergence.css %}
+  <!-- <link href="/assets/css/convergence.css" rel="stylesheet"> -->
+
+  <!-- Fonts with preloads -->  
+  <link rel="preload" href="/assets/fonts/fontawesome/fonts/fontawesome-webfont.eot?v=4.7.0" as="font" crossorigin>
+  <link rel="preload" href="/assets/fonts/fontawesome/fonts/fontawesome-webfont.woff?v=4.7.0" as="font" crossorigin>
+  <link rel="preload" href="/assets/fonts/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin>
+  <link rel="preload" href="/assets/fonts/fontawesome/fonts/fontawesome-webfont.ttf?v=4.7.0" as="font" crossorigin>
+  <link rel="preload" href="/assets/fonts/fontawesome/fonts/fontawesome-webfont.svg?v=4.7.0" as="font" crossorigin>
+
+  <link rel="preload" href="/assets/fonts/linea-font/fonts/linea-icon-font.eot" as="font" crossorigin>
+  <link rel="preload" href="/assets/fonts/linea-font/fonts/linea-icon-font.woff" as="font" crossorigin>
+  <link rel="preload" href="/assets/fonts/linea-font/fonts/linea-icon-font.ttf" as="font" crossorigin>
+  <link rel="preload" href="/assets/fonts/linea-font/fonts/linea-icon-font.svg#linea-icon-font" as="font" crossorigin>
+
+  <link rel="preload" href="/assets/fonts/century-gothic/fonts/CenturyGothic.eot" as="font" crossorigin>
+  <link rel="preload" href="/assets/fonts/century-gothic/fonts/CenturyGothic.woff" as="font" crossorigin>
+  <link rel="preload" href="/assets/fonts/century-gothic/fonts/CenturyGothic.ttf" as="font" crossorigin>
+  <link rel="preload" href="/assets/fonts/century-gothic/fonts/CenturyGothic.svg" as="font" crossorigin>
+
+  {% asset fonts.css %}
 
   <!-- Facebook Pixel Code -->
   <script>
@@ -42,7 +62,7 @@
   </noscript>
   <!-- End Facebook Pixel Code -->
   
-  <script src="https://www.google-analytics.com/analytics.js"></script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   
   <!-- Drip -->
   <script type="text/javascript">

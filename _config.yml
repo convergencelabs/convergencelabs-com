@@ -24,6 +24,9 @@ keep_files:
   - assets/js
   - assets/css/vendor
 
+sass:
+  sass_dir: assets/css
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -38,7 +41,6 @@ exclude:
   - Jenkinsfile
   - scripts
   - server
-
 
 ############################################################
 # Pagination Config
