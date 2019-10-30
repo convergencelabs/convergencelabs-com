@@ -1,0 +1,13 @@
+<a href="{{ social[1].url }}">
+  {% if social[0] == 'github' %}
+    {% assign iconClass = 'fa-github' %}
+  {% elsif social[0] == 'linkedin' %}
+    {% assign iconClass = 'fa-linkedin' %}
+  {% elsif social[0] == 'twitter' %}
+    {% assign iconClass = 'fa-twitter' %}
+  {% elsif social[0] == 'facebook' %}
+    {% assign iconClass = 'fa-facebook' %}
+  {% endif %}
+  <i class="fa {{ iconClass }}"></i>
+</a>
+                

@@ -45,93 +45,35 @@ permalink: /about/
         <span class="subheading">A Team You Can Count On</span>
       </header>
 
-      <!-- Member 1 -->
+      {% for authorObj in site.authors %}
+      {% assign author = authorObj[1] %}
+      <!-- Member -->
       <div class="col-lg-4 col-md-6 mb-sm-50">
         <div class="t-item">
 
           <!-- Image -->
           <div class="t-image">
-            <img src="/assets/images/staff/alec-lalonde.jpg" alt="Alec LaLonde" class="img-responsive">
+            <img src="{{ author.pic }}" alt="{{ author.name }}" class="img-responsive">
             <div class="t-description">
               <div class="content-wrapper">
-                <p>Alec has been building web applications since 1998 and was a highly sought-after independent contractor for much of that time.  He sees a massive opportunity to improve people's ability to work together in an increasingly distributed world, and is dedicated to aligning this vision with the unique needs of Convergence's customers.</p>
+                <p>{{ author.bio }}</p>
               </div>
             </div>
           </div>
 
           <!-- Info -->
           <div class="t-info">
-            <h4 class="t-name">Alec LaLonde</h4>
-            <span class="t-role">CEO and Co-founder</span>
+            <h4 class="t-name">{{ author.name }}</h4>
+            <span class="t-role">{{ author.role }}</span>
             <ul class="social-links">
-              <li><a href="https://github.com/alalonde"><i class="fa fa-github"></i></a></li>
-              <li><a href="https://twitter.com/aleclalonde"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/alec-lalonde-20560a20"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-
-        </div><!-- / .t-item -->
-      </div><!-- / .col-md-4 -->
-
-
-      <!-- Member 2 -->
-      <div class="col-lg-4 col-md-6 mb-sm-50">
-        <div class="t-item">
-
-          <!-- Image -->
-          <div class="t-image">
-            <img src="/assets/images/staff/michael-macfadden.jpg" alt="Michael MacFadden" class="img-responsive">
-            <div class="t-description">
-              <div class="content-wrapper">
-                <p>Michael has a M.S. in Computer Science, has been coding for about 20 years, and is a recognized expert in the field of distributed systems and real time collaboration. Michael passionately believes that collaborative software will change the world by bringing people together in new and exciting ways.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Info -->
-          <div class="t-info">
-            <h4 class="t-name">Michael MacFadden</h4>
-            <span class="t-role">CTO and Co-founder</span>
-            <ul class="social-links">
-              <li><a href="https://github.com/mmacfadden"><i class="fa fa-github"></i></a></li>
-              <li><a href="https://twitter.com/MMacFadden"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/michaelmacfadden"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://www.facebook.com/michael.macfadden"><i class="fa fa-facebook"></i></a></li>
+              {% for social in author.social %}
+              <li>{% include social-link.html %}</li>
+              {% endfor %}
             </ul>
           </div>
         </div><!-- / .t-item -->
-      </div><!-- / .col-md-4 -->
-
-
-
-      <!-- Member 3 -->
-      <div class="col-lg-4 col-md-6 mb-sm-50">
-        <div class="t-item">
-
-          <!-- Image -->
-          <div class="t-image">
-            <img src="/assets/images/staff/cameron-meyer.jpg" alt="Cameron Meyer" class="img-responsive">
-            <div class="t-description">
-              <div class="content-wrapper">
-                <p>Cameron has been developing collaborative systems for almost a decade and faced, first hand, all the challenges that entails. He is dedicated to making it easier for all developers to create highly interactive apps that deliver great collaborative user experiences.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Info -->
-          <div class="t-info">
-            <h4 class="t-name">Cameron Meyer</h4>
-            <span class="t-role">Co-founder</span>
-            <ul class="social-links">
-              <li><a href="https://www.facebook.com/madmancameron"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/cameron-meyer-3913211"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://github.com/madmancam"><i class="fa fa-github"></i></a></li>
-            </ul>
-          </div>
-
-        </div><!-- / .t-item -->
-      </div><!-- / .col-md-4 -->
-
+      </div><!-- / .col-md-6 -->
+      {% endfor %}
 
     </div><!-- / .row -->
   </section><!-- / .contianer -->
