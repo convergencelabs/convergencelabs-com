@@ -5,7 +5,7 @@ description: We have been hard at work adding several major new features in the 
 date:   2017-04-20 15:09:21 -0700
 categories: convergence
 featured_image: /assets/images/blog/update.jpg
-author: Michael MacFadden
+author: michael
 ---
 
 # What’s New?

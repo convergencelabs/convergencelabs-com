@@ -4,7 +4,7 @@ title: "Convergence Is Now Open-Source"
 date: 2019-08-16 10:21:01 -0700
 categories: [convergence]
 featured_image: /assets/images/blog/convergence-de.png
-author: Alec LaLonde
+author: alec
 crosspost_to_medium: true
 ---
 We are incredibly excited to offer the entire Convergence Collaboration Engine as [open source software](https://github.com/convergencelabs/convergence-server).  Our mission from day one has been to usher in a new era of collaboration-first software, where people have access to amazing tools to create things together regardless of physical location.  Today marks a huge step in that direction.

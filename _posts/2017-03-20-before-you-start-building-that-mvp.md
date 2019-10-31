@@ -3,7 +3,7 @@ layout: post
 title:  "Before You Start Building That MVP"
 description: You’ve got a great idea for an app. You’ve even talked to dozens of potential customers about the idea. It’s time to build an MVP, and fast — but how?
 date:   2017-03-20 15:09:21 -0700
-author: Alec LaLonde
+author: alec
 categories: startups
 featured_image: /assets/images/blog/board-game-start.jpg
 ---

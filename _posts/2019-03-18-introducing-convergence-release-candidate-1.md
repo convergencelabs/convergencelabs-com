@@ -5,7 +5,7 @@ description: "RC.1 represents our initial On-premise-first release of Convergenc
 date: 2019-03-18 21:21:21 -0700
 categories: [convergence]
 featured_image: /assets/images/blog/rc1.png
-author: Alec LaLonde
+author: alec
 crosspost_to_medium: true
 ---
 This is the biggest release we've ever done.

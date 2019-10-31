@@ -5,7 +5,7 @@ description: "Collaborative code editing is rising in popularity, so we created 
 date: 2019-10-22 09:21:01 -0700
 categories: [convergence, community]
 featured_image: /assets/images/blog/monaco-demo.gif
-author: Alec LaLonde
+author: alec
 crosspost_to_medium: true
 ---
 Around mid-2017, some of the [major](https://teletype.atom.io/) [open-source](https://code.visualstudio.com/blogs/2017/11/15/live-share) code editors starting adding real-time collaboration (RTC) functionality.  This allowed developers to create "live" sessions in which they could share their current workspace with trusted collaborators.  The plugins have been used for all sorts of different cases, from performing coding interviews to paired programming to collaborative debugging.  This sort of collaboration modality has the potential to be even better than paired programming on a single terminal: each developer can control her own input devices and viewport while still being aware of what the other developer(s) are working on.  They can work independently while still able to communicate (over a separate voice or video channel) about shared code constructs.

@@ -32,7 +32,7 @@ layout: default
             <i class="fa fa-calendar-o"></i>
             <span>{{ page.date | date: "%B %d, %Y" }}</span>
           </a>
-          <span class="post-author">By {{page.author}}</span>
+          {% include post-author.html author=page.author %}
         </div><!-- / .meta -->
 
         <!-- Sharing Bar -->

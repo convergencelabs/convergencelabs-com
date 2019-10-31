@@ -14,7 +14,7 @@
         <i class="fa fa-calendar-o"></i>
         <span>{{ post.date | date: "%B %d, %Y" }}</span>
       </span>
-      <div class="post-author">By {{post.author}}</div>
+      {% include post-author.html author=post.author %}
     </div><!-- / .meta -->
 
     <!-- Blurb -->

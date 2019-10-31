@@ -5,7 +5,7 @@ description: "Build a multi-user code editor in minutes, with Ace and Convergenc
 date:   2018-02-06 12:09:21 -0700
 categories: [convergence, community]
 featured_image: /assets/images/blog/ace-collab.jpg
-author: Alec LaLonde
+author: alec
 crosspost_to_medium: true
 ---
 

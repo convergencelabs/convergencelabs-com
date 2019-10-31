@@ -1,0 +1,40 @@
+alec:
+  name: Alec LaLonde
+  role: CEO and Co-founder
+  pic: /assets/images/staff/alec-lalonde.jpg
+  bio: Alec has been building web applications since 1998 and was a highly sought-after independent contractor for much of that time.  He sees a massive opportunity to improve people's ability to work together in an increasingly distributed world, and is dedicated to aligning this vision with the unique needs of Convergence's customers.
+  has_posts: true
+  social: 
+    github:
+      url: https://github.com/alalonde  
+    twitter:
+      url: https://twitter.com/aleclalonde
+    linkedin:
+      url: https://www.linkedin.com/in/alec-lalonde-20560a20
+michael:
+  name: Michael MacFadden
+  role: CTO and Co-founder
+  pic: /assets/images/staff/michael-macfadden.jpg
+  bio: Michael has a M.S. in Computer Science, has been coding for about 20 years, and is a recognized expert in the field of distributed systems and real time collaboration. Michael passionately believes that collaborative software will change the world by bringing people together in new and exciting ways.
+  has_posts: true
+  social: 
+    github:
+      url: https://github.com/mmacfadden
+    twitter:
+      url: https://twitter.com/MMacFadden
+    linkedin:
+      url: https://www.linkedin.com/in/michaelmacfadden
+    facebook:
+      url: https://www.facebook.com/michael.macfadden
+cameron:
+  name: Cameron Meyer
+  role: Co-founder
+  pic: /assets/images/staff/cameron-meyer.jpg
+  bio: Cameron has been developing collaborative systems for almost a decade and faced, first hand, all the challenges that entails. He is dedicated to making it easier for all developers to create highly interactive apps that deliver great collaborative user experiences.
+  social: 
+    github:
+      url: https://github.com/madmancam
+    linkedin:
+      url: https://www.linkedin.com/in/cameron-meyer-3913211
+    facebook:
+      url: https://www.facebook.com/madmancameron

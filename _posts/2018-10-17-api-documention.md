@@ -5,7 +5,7 @@ description: "After much harassment from our patient users, we've released the f
 date: 2018-10-17 14:40:21 -0600
 categories: [convergence, general]
 featured_image: /assets/images/blog/api-docs.jpg
-author: Alec LaLonde
+author: alec
 crosspost_to_medium: true
 ---
 

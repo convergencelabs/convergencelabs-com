@@ -2,7 +2,7 @@
 layout: post
 title:  "Building Real Time Collaborative Apps"
 description: Over the last five years there’s been a huge amount of activity around developer tools for realtime applications. The tools for realtime collaborative editing, however, haven’t kept pace. We discuss what’s required to build an effective realtime collaborative application.
-author: Alec LaLonde
+author: alec
 date:   2017-02-05 15:09:21 -0700
 categories: [realtime collaboration]
 featured_image: /assets/images/blog/car-schematic.jpg

@@ -5,7 +5,7 @@ description: "Over the latest decade or so, the majority of reusable UI componen
 date: 2018-05-21 13:40:21 -0600
 categories: [realtime collaboration, software development]
 featured_image: /assets/images/blog/component-api.png
-author: Michael MacFadden
+author: michael
 crosspost_to_medium: true
 ---
 

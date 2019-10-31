@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% assign subtitle = "Author: " | append: page.title %}
+{% include page-title.html title="The Convergence Labs Blog" subtitle=subtitle %}
+
+{% assign author = page.title | slugify %} 
+{% assign author_posts = site.posts | where_exp: "post", "post.author contains author" %}
+
+<div id="blog" class="section container blog-classic">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="author-posts">
+        <p class="title">{{ author_posts.size }} posts by {{ site.data.authors[author].name }}:</p>
+        <ul class="posts">
+          {% for post in author_posts %}
+          <li>
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <aside class="col-md-offset-1 col-md-3 sidebar">
+      {% include blog-nav.html %}
+    </aside>
+  </div>
+</div>

@@ -280,3 +280,14 @@ body {
   }
    
 }
+
+.author-posts, .category-posts {
+  .title {
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  ul {
+    padding-left: 18px;
+  }
+}

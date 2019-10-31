@@ -5,7 +5,7 @@ description: "Our first category-specific overview covers the most popular web-b
 date: 2020-04-09 10:21:01 -0700
 categories: [convergence, RTC software roundups]
 featured_image: /assets/images/blog/convergence-de.png
-author: Alec LaLonde
+author: alec
 crosspost_to_medium: true
 ---
 Real-time multi-editing functionality is slowly spreading over the entire software landscape.  In the last few years we've seen the major players in office software (Apple, Microsoft) add [real-time collaboration](/blog/2017/02/redefining-realtime-collaboration/) (RTC) to their own offerings.  

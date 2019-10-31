@@ -2,7 +2,7 @@
 layout: evergreen-post
 title:  "Choosing a realtime collaboration library"
 description: "There are a number of open source and commercial software libraries, frameworks and APIs out there to help you add realtime collaboration to your app.  In this guide, we give you both a rundown of the available technologies as well as some often overlooked considerations to help you make better technology decisions."
-author: Alec LaLonde
+author: alec
 permalink: /realtime-collaboration-technology-guide/
 featured_image: /assets/images/shelf_books.jpg
 generate_subnav: true

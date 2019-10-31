@@ -5,7 +5,7 @@ description: "We recently added a very interesting feature to the AgTech web app
 date: 2019-04-09 10:21:01 -0700
 categories: [case studies]
 featured_image: /assets/images/blog/convergence-de.png
-author: Alec LaLonde
+author: alec
 crosspost_to_medium: true
 ---
 What if you could add screen-sharing 

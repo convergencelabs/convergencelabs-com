@@ -1,0 +1,17 @@
+<span class="post-author">By 
+  {% assign multipleAuthors = include.author.first %}
+  {% if multipleAuthors %}
+    {% for author in include.author %}
+      {% assign authorName = site.data.authors[author].name %}
+      {% if forloop.first %}
+        {{ authorName }}
+      {% elsif forloop.last %}
+        and {{ authorName }}
+      {% else %}
+        , {{ authorName }}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {{ site.data.authors[include.author].name }}
+  {% endif %}
+</span>

@@ -5,7 +5,7 @@ description: "While utilizing the DOM as a web-layer abstraction is appealing, i
 date: 2020-06-09 10:21:01 -0700
 categories: [architecture]
 featured_image: /assets/images/blog/convergence-de.png
-author: Alec LaLonde
+author: alec
 crosspost_to_medium: true
 ---
 When presented with the idea of real-time collaborative web applications, many people over the years have landed on the idea of utilizing the DOM itself as the data layer for synchronizing multiple users' browser state with one another.  The most visible implementation of this was Mozilla's TogetherJS (now unfortunately abandoned).  Co-browsing was the main goal here: what one person navigated to or clicked on would be broadcasted to all other participants immediately.  Mozilla even implemented text-level Operational Transformation (OT) to provide conflict resolution when multiple people tried to edit the same input field.
