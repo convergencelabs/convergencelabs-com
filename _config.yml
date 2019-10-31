@@ -43,7 +43,7 @@ exclude:
 
 collections: 
   authors:
-    permalink: /blog/author/:name
+    permalink: /blog/author/:name/
     output: true
 
 ############################################################
