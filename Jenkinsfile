@@ -6,7 +6,6 @@ jekyllPod { label ->
     stage('Jekyll Build') {
       container('jekyll') {
         sh '''
-        gem install bundler
         bundle install
         jekyll build
         '''
