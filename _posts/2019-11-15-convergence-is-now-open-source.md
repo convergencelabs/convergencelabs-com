@@ -2,15 +2,15 @@
 layout: post
 title: "Convergence Is Now Open Source"
 description: "We are delighted to now offer the Convergence Collaboration Engine as free and open source software. Here we discuss our journey and what this change means going forward."
-date: 2019-11-13 16:21:01 -0700
-categories: [convergence]
-featured_image: /assets/images/blog/convergence-de.png
+date: 2019-11-15 11:51:01 -0700
+categories: [convergence, community]
+featured_image: /assets/images/blog/open-source.png
 author: alec
 crosspost_to_medium: true
 ---
 We are incredibly excited to offer Convergence as free and [open source software](https://github.com/convergencelabs).  Our mission from day one has been to usher in a new era of collaboration-first software, where people have access to amazing tools to create things together regardless of physical location.  Today marks a huge step in that direction.
 
-Convergence is far and away the most powerful piece of software for building real-time collaborative (RTC) applications.  We've of course been saying that for years, but now you can go and [see for yourself](https://github.com/convergencelabs)!  Over the last decade we've been building RTC applications for people all over the world, and learned a lot along the way about the typical technical and product requirements.  From this expertise we designed and built Convergence, which is the 4th generation (and first publicly-available version) of a real-time collaboration engine.  It provides all the components you need to build your own RTC app very quickly.
+Convergence is far and away the most powerful piece of software for building real-time collaborative (RTC) applications.  We've of course been saying that for years, but now you can go and [see for yourself](https://github.com/convergencelabs)!  Over the last decade we've been building RTC applications for people all over the world, and along the way we've learned a lot about a typical product's UX and technical requirements.  From this expertise we designed and built Convergence, which is the 4th generation (and first publicly-available version) of our real-time collaboration engine.  It provides all the components you need to build your own RTC app very quickly.
 
 # Our journey and the state of real-time collaborative software
 

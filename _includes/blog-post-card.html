@@ -1,7 +1,9 @@
 <div class="blog-post wow fadeIn" data-wow-duration="2s">
 
   <!-- Image -->
-  <a href="{{ post.url }}" class="post-img"><img src="{{post.featured_image}}" alt="{{post.title}}"></a>
+  <a href="{{ post.url }}" class="post-img">
+    <img src="{{post.featured_image}}" alt="{{post.title}}">
+  </a>
 
   <div class="bp-content">
 
@@ -23,9 +25,7 @@
     </div>
 
     <!-- Link -->
-    <div class="text-right">
-      <a href="{{ post.url }}" class="btn btn-small">Read More</a>
-    </div>
+    <a href="{{ post.url }}" class="btn btn-small">Read More</a>
 
   </div><!-- / .bp-content -->
 </div><!-- / .blog-post -->

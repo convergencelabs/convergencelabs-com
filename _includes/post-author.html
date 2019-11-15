@@ -4,14 +4,19 @@
     {% for author in include.author %}
       {% assign authorName = site.data.authors[author].name %}
       {% if forloop.first %}
-        {{ authorName }}
+      <a href="/blog/author/{{ author }}">{{ authorName }}</a>
       {% elsif forloop.last %}
-        and {{ authorName }}
+        and <a href="/blog/author/{{ author }}">{{ authorName }}</a>
       {% else %}
-        , {{ authorName }}
+        , <a href="/blog/author/{{ author }}">{{ authorName }}</a>
       {% endif %}
     {% endfor %}
   {% else %}
-    {{ site.data.authors[include.author].name }}
+    {% assign author = site.data.authors[include.author] %}
+    {% if author %}
+      <a href="/blog/author/{{ include.author }}">{{ author.name }}</a>
+    {% else %}
+      {{ include.author }}
+    {% endif %}
   {% endif %}
 </span>
