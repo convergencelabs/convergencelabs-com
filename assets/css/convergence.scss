@@ -191,6 +191,24 @@ body {
   h3 {
     margin: 2.5em 0 0.5em;
   }
+
+  figure {
+    &.float-right {
+      float: right;
+      padding: 0 0 1em 1em;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    figcaption {
+      padding-top: 0.5em;
+      font-style: italic;
+      line-height: 1.2em;
+      text-align: left;
+    }
+  }
 }
 @media (max-width: $screen-sm) {
   .blog-post-content {
@@ -199,6 +217,10 @@ body {
     }
     ul {
       text-align: left;
+    }
+
+    figure.float-right {
+      float: none;
     }
   }
 }

@@ -3,7 +3,7 @@ layout: post
 title: "Convergence Is Now Open Source"
 description: "We are delighted to now offer the Convergence Collaboration Engine as free and open source software. Here we discuss our journey and what this change means going forward."
 date: 2019-11-15 11:51:01 -0700
-categories: [convergence, community]
+categories: [convergence, community, open source]
 featured_image: /assets/images/blog/open-source.png
 author: alec
 crosspost_to_medium: true
