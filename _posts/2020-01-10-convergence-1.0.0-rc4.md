@@ -2,7 +2,7 @@
 layout: post
 title: "Convergence 1.0.0 Release Candidate 4"
 description: "We just released Convergence 1.0.0-rc.4, which includes eight months (!) of updates across all aspects of the product."
-date: 2020-01-09 16:51:01 -0700
+date: 2020-01-10 09:51:01 -0700
 categories: [convergence]
 featured_image: /assets/images/blog/clark-tibbs-oqStl2L5oxI-unsplash.jpg
 author: alec
@@ -41,6 +41,6 @@ To save you from clicking that last link, in the short-term we are focused on im
 
 Feature-wise, we are already building experimental Rich Text support into the product! Look for this in the next few months.
 
-To keep up to date with what we're working on, simply [watch](https://github.com/convergencelabs/convergence-project) our GitHub tracking project, or [sign up](https://www.getdrip.com/forms/62786386/submissions) for our (sparsely-utilized) newsletter.
+To keep up to date with what we're working on, simply [watch](https://github.com/convergencelabs/convergence-project) our GitHub tracking project, [follow us](https://twitter.com/ConvergenceTeam) on Twitter or [sign up](https://www.getdrip.com/forms/62786386/submissions) for our (rarely-emailed) newsletter.
 
 We are really looking forward to seeing what you'll build!
