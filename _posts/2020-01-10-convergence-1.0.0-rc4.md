@@ -14,6 +14,8 @@ If you haven't noticed, there have been a lot of major changes around here. Topp
 
 Convergence now intelligently detects and smooths over connectivity interruptions.  So, for example, if you're co-editing a diagram with a colleague on a mobile device, and your connection drops temporarily, Convergence will automatically queue up any subsequent edits in memory.  On reconnection, there is an automatic reconciliation process where any remote updates are pulled down, merged with your local changes, and sent back up to the server.  No longer do consuming applications have to write their own connectivity-detecting boilerplate code.
 
+Also, see our [dedicated blog post](/blog/2020/01/new-features-offline-support-and-connection-smoothing/) on this feature which goes into significantly more detail.
+
 # Experimental Offline Support
 
 Convergence now supports [offline editing](https://docs.convergence.io/guide/offline/overview.html).  You can think of this as a logical extension to the automatic reconnect functionality, where instead of keeping local changes in memory, we persist them.  This enables complete support for offline sessions, including [initializing domains while offline](https://docs.convergence.io/js-api/classes/convergencedomain.html#initializeoffline), [downloading model data](https://docs.convergence.io/js-api/classes/real_time_data.modelservice.html#subscribeoffline) in preparation for a connectivity disruption, and automatic change synchronization on connectivity restoration. 
@@ -21,6 +23,8 @@ Convergence now supports [offline editing](https://docs.convergence.io/guide/off
 We are calling this functionality experimental in order to keep the door open for [potential breaking API changes](https://docs.convergence.io/guide/offline/overview.html#Limitations) as well as acknowledging the need for more robust testing.  
 
 One unintuitive limitation of this early offline release regards the most common "kicking the tires" scenario: Initializing offline domains in two adjacent browser tabs.  In this case, the same IndexedDB database will be shared between tabs, causing unexpected behavior.  Using two different browsers entirely works as intended. We will be refining this use case in the coming months.
+
+For more detail about offline support, see our [dedicated blog post](/blog/2020/01/new-features-offline-support-and-connection-smoothing/).
 
 # API Keys, Documentation, Bug fixes and more
 

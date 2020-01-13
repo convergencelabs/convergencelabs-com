@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "New Features: Offline Support and Connection Smoothing"
-description: "We go into some detail one our new offline support. Why did we build them?  What did we aim to support?  How did we go about it? Where are we going next?"
-date: 2020-01-10 10:21:01 -0700
+description: "Here we go into more detail about our new offline and reconnection features. Why did we build them?  What sort of use cases did we aim to support?  And what's next?"
+date: 2020-01-13 11:35:01 -0700
 categories: [convergence]
 featured_image: /assets/images/blog/plug.png
 author: 
@@ -12,11 +12,11 @@ crosspost_to_medium: false
 ---
 Convergence is first and foremost an engine for live real-time collaboration (RTC).  It was designed from the ground up to utilize a central server to coordinate changes between any connected clients over any number of collaboration contexts.
 
-But what happens when a client temporarily loses connectivity?  Originally, the Convergence client would detect the connectivity disruption, emit a `INTERRUPTED` event, and simply throw exceptions when most client API calls where made.  There was no concept of "offline functionality".  Consuming applications were forced to immediately halt editing and display some sort of "Connection Lost" modal, which isn't the best user experience.
+But what happens when a client temporarily loses connectivity?  Originally, the Convergence client would detect the connectivity disruption, emit an `INTERRUPTED` event, and simply throw exceptions when most client API calls where made.  There was no concept of "offline functionality".  Consuming applications were forced to immediately halt editing and display some sort of "Connection Lost" modal, which isn't the best user experience.
  
-Many users request the ability to continue to work during temporary disconnections where model changes, presence updates, activity updates, etc. can still be made locally and then synced to the server when connection is regained. However, this requires that the application remain open. We have several customer request the ability to work during more long term periods of disconnection where the application does not need to remain open, requiring persistent offline storage of data.
+We've had a few users request the ability to continue to work during temporary disconnections. Where model changes, presence updates, activity updates, etc. can still be made locally and then synced to the server when connectivity is regained. However, this requires that the application remain open. Furthermore, we've had several customers request the ability to work during more long-term periods of disconnection where the application does not need to remain open, requiring persistent offline storage of data.
  
-Convergence `1.0.0-rc.4` introduces experimental offline support the aims to meet these requirements!  Let's dive into what exactly we mean by "offline" support.
+In Convergence `1.0.0-rc.4` we've introducted experimental offline to meet these requirements!  Let's dive into what exactly what we mean by "offline" support.
 
 # Aims
 
@@ -28,7 +28,7 @@ The overall aim is to require as little forethought from the developer as necess
 
 # Supported Features
 
-Here are the features we support in `1.0.0-rc.4`:
+Here are the features we support in Release Candidate 4:
 
 ## General
 - Support for applications running in evergreen browsers, the most popular embedded browser environments (Electron, NwJS), and Node.js.
@@ -40,39 +40,35 @@ Here are the features we support in `1.0.0-rc.4`:
 - Configuration of the reconnection behavior.
 
 ## Real Time Data
-- All local changes to models are always stored locally until acknowledged by the server.
+- When offline support is enabled, all local changes to models are always stored locally until acknowledged by the server.
 - Create new models offline and store them until reconnected.
 - While connected, proactively download any number of models, and keep them updated on any remote changes.  See [ModelService.subscribeOffline](https://docs.convergence.io/js-api/classes/real_time_data.modelservice.html#subscribeoffline)
 - Open available models offline and make additional changes.
-- When a ConvergenceDomain detects connectivity again and offline changes to models are detected, it automatically syncs those models with the server.  This includes models that are not currently open.
-- Delete models offline, and they will be deleted when reconnection occurs.
+- When a `ConvergenceDomain` detects connectivity again and offline changes to models are detected, it automatically syncs those models with the server.  This includes models that are not currently open.
+- Delete models offline, which are deleted on the server upon reconnect.
 
 ## Activities
-- Activity state is maintained while offline, and users can continue to change their activity state.
+- Activity [state](https://docs.convergence.io/guide/activities/state.html) is maintained while offline. Users can continue to change their own state.
 - Activities can be joined offline.
-- When Convergence reconnects, all previously joined activities are rejoined and the latest activity state is published for each activity
+- When Convergence reconnects, all previously joined activities are rejoined and the latest activity state is published for each activity.
 
 ## Chat
 - All previously joined chat rooms are rejoined upon reconnection.
 
 ## Presence
-- Presence state is maintained while offline, and users can continue to change their presence state.
-- When Convergence reconnects, all previously the latest presence state is published.
-- Any presence subscriptions are re-established.
+- [Presence](https://docs.convergence.io/guide/presence/overview.html) state is maintained while offline. Users can continue to change their own state.
+- Upon reconnect, the user's current presence state is published.
+- Any existing presence [subscriptions](https://docs.convergence.io/js-api/classes/presence.userpresencesubscription.html) are re-established on reconnect.
 
-# Limitations and Unsupported features
+# Limitations
 The following features are not yet supported in `1.0.0-rc.4`, but coming soon:
 
-- Offline editing in multiple tabs in the same browser.  There are numerous complications to support this, mainly around those editing sessions being persisting to the the same local database.
+- Offline editing in multiple tabs in the same browser.  There are numerous complications to support this, mainly around those editing sessions persisting to the same local database.
 - Encryption of local data.
-- Model id's can be user defined, thus when offline changes to models and deletion of models is based on id.  If other connected users delete a model with a particular id, and then recreate it, Convergence can't tell that it is a new model.
+- Model IDs can be user defined. When offline, changes to models and deletion of models are keyed by id.  So if another connected user deletes a model with a particular id, and then recreates it, Convergence can't currently tell that it is a new (different) model.
 
 # Usage
 
-Clearly, there is a ton going on behind the scenes here to support these various connectivity scenarios. Yet we have minimized the effort necessary to actually use these features.  For detailed usage information, see our [developer Guide](https://docs.convergence.io/guide/offline/overview.html).  Automatic reconnect comes for free and is enabled by default.  Some aspects of the reconnect functionality are configurable; see the [documentation](https://docs.convergence.io/js-api/interfaces/connection_and_authentication.iconvergenceoptions.html#reconnect)
+Clearly, there is a ton going on behind the scenes here to support these various connectivity scenarios. Yet we have minimized the effort necessary to actually use these features.  For detailed usage information, see our [Developer Guide](https://docs.convergence.io/guide/offline/overview.html).  Automatic reconnect comes for free and is enabled by default.  Some aspects of the reconnect functionality are configurable; see the [documentation](https://docs.convergence.io/js-api/interfaces/connection_and_authentication.iconvergenceoptions.html#reconnect).
 
 We hope you enjoy this new functionality as much as we enjoyed building it!
-
-TODO 
-
-Add backlink from rc.4 post when ready to publish
