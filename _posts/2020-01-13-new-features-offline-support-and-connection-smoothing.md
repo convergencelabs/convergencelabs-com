@@ -8,7 +8,7 @@ featured_image: /assets/images/blog/plug.png
 author: 
 - alec
 - michael
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 Convergence is first and foremost an engine for live real-time collaboration (RTC).  It was designed from the ground up to utilize a central server to coordinate changes between any connected clients over any number of collaboration contexts.
 
