@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Convergence 1.0.0 Release Candidate 5"
-description: "Announcing the release of Convergence 1.0.0-rc.5! No more waiting multiple months between releases"
+description: "Announcing the release of Convergence 1.0.0-rc.5! No more waiting multiple months between releases. Check out the 29 improvement we've made."
 date: 2020-01-19 09:00:00 -0700
 categories: [convergence]
 featured_image: /assets/images/blog/lance-grandahl-OxXmASDLFjY-unsplash.jpg
