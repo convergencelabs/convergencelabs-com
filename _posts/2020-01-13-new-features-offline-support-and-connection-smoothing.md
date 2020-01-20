@@ -16,7 +16,7 @@ But what happens when a client temporarily loses connectivity?  Originally, the 
  
 We've had a few users request the ability to continue to work during temporary disconnections. Where model changes, presence updates, activity updates, etc. can still be made locally and then synced to the server when connectivity is regained. However, this requires that the application remain open. Furthermore, we've had several customers request the ability to work during more long-term periods of disconnection where the application does not need to remain open, requiring persistent offline storage of data.
  
-In Convergence `1.0.0-rc.4` we've introducted experimental offline to meet these requirements!  Let's dive into what exactly what we mean by "offline" support.
+In Convergence `1.0.0-rc.4` we've introduced experimental offline to meet these requirements!  Let's dive into what exactly what we mean by "offline" support.
 
 # Aims
 
