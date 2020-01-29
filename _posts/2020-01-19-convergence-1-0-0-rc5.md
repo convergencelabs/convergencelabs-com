@@ -6,7 +6,7 @@ date: 2020-01-19 09:00:00 -0700
 categories: [convergence]
 featured_image: /assets/images/blog/lance-grandahl-OxXmASDLFjY-unsplash.jpg
 author: michael
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 Hot on the heels of our significant [1.0.0-rc.4 release](/blog/2020/01/convergence-1-0-0-rc4/), we are pleased to announce the availability of [1.0.0-rc.5](https://github.com/convergencelabs/convergence-project/wiki/CHANGELOG#100-rc5-jan-19-2020). Release Candidate 4 got a lot of attention and had a lot of new features. Lots of users got their hands on that release and gave us quite a bit of feedback.  Release Candidate 5 is packed with 29 bug fixes and features prioritized by you, our community.
 
