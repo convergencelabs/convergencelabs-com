@@ -26,4 +26,4 @@ That's where the [Collaborative Extensions for Monaco](https://github.com/conver
 
 These extensions were built in an agnostic manner, and have _no dependencies on Convergence or any other data-sync library_.  
 
-To see the [extensions]((https://github.com/convergencelabs/monaco-collab-ext)) in action, check out our [example app](https://examples.convergence.io/examples/monaco/) that utilizes Monaco and the [Convergence Collaboration Engine](https://convergence.io) to provide a nice collaborative editing experience.  
+To see the [extensions](https://github.com/convergencelabs/monaco-collab-ext) in action, check out our [example app](https://examples.convergence.io/examples/monaco/) that utilizes Monaco and the [Convergence Collaboration Engine](https://convergence.io) to provide a nice collaborative editing experience.  
