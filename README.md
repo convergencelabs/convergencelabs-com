@@ -10,7 +10,7 @@ This repository hosts the source for the convergencelabs.com. The website is bui
 ## Development Setup
 
  * Ensure development dependencies are installed for your platform.
- * bundle exec jekyll serve --incremental
+ * bundle exec jekyll serve --incremental --drafts
  * Open http://localhost:4000
 
 ## Jekyll Build
