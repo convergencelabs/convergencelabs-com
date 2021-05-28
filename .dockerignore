@@ -1,7 +1,4 @@
-_includes
-_layouts
-_posts
-_sass
-_source_theme
-assets
-pages
+.idea
+.jekyll-cache
+.sass-cache
+_site

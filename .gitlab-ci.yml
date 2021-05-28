@@ -1,0 +1,51 @@
+include:
+  - project: 'dev-infra/gitlab-ci-templates'
+    ref: master
+    file: 'jobs/.kaniko-container-build.yaml'
+  - project: 'dev-infra/gitlab-ci-templates'
+    ref: master
+    file: 'jobs/.trivy-container-scan.yaml'
+  - project: 'dev-infra/gitlab-ci-templates'
+    ref: master
+    file: 'jobs/.docker-hadolint.yaml'
+  - project: 'dev-infra/gitlab-ci-templates'
+    ref: master
+    file: 'jobs/.push-container.yaml'
+  - project: 'dev-infra/gitlab-ci-templates'
+    ref: master
+    file: 'jobs/.trufflehog-scan.yaml'
+
+stages:
+  - Lint
+  - Build
+  - Security
+  - Promote
+
+variables:
+  DOCKER_IMAGE_NAME: convergence-io-www
+
+Dockerfile Lint:
+  extends: .docker-hadolint
+  stage: Lint
+
+Build Container:
+  extends: .kaniko-container-build
+  stage: Build
+  variables:
+    IMAGE_NAME: $DOCKER_IMAGE_NAME
+
+Trivy Scan:
+  extends: .trivy-container-scan
+  stage: Security
+
+Truffle Hog:
+  extends: .truffle-hog
+  stage: Security
+
+Push Latest to Nexus:
+  extends: .nexus-push-container
+  stage: Promote
+  variables:
+    IMAGE_NAME: $DOCKER_IMAGE_NAME
+    IMAGE_TAG: "latest"
+    AUTO: "true"

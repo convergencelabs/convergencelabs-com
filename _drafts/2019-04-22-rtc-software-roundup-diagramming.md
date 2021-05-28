@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Real-time Collaboration UX Round-up: Diagramming Software
+title: "Real-time Collaboration UX Round-up: Diagramming Software"
 description: "Our first category-specific overview covers the most popular web-based diagramming software out there: who has multi-editing functionality and how do they stack up?"
 date: 2020-04-09 10:21:01 -0700
 categories: [convergence, RTC software roundups]
