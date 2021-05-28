@@ -22,7 +22,7 @@ stages:
   - Promote
 
 variables:
-  DOCKER_IMAGE_NAME: convergence-io-www
+  DOCKER_IMAGE_NAME: convergencelabs-com-www
 
 Dockerfile Lint:
   extends: .docker-hadolint
