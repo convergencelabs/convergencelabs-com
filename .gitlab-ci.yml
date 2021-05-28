@@ -38,9 +38,9 @@ Trivy Scan:
   extends: .trivy-container-scan
   stage: Security
 
-Truffle Hog:
-  extends: .truffle-hog
-  stage: Security
+#Truffle Hog:
+#  extends: .truffle-hog
+#  stage: Security
 
 Push Latest to Nexus:
   extends: .nexus-push-container
