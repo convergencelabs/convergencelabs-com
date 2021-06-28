@@ -8,7 +8,12 @@ RUN bundle install && \
 
 FROM nginx:1.21.0-alpine
 
-RUN apk update && apk add --no-cache libcurl=7.77.0-r0 curl=7.77.0-r0
+## These are here to resolve cyber vunls.
+RUN apk update && \
+    apk --no-cache add \
+    curl=~7.77.0-r1 \
+    libcurl=~7.77.0-r1 \
+    libxml2=2.9.10-r7
 
 COPY server/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /home/jekyll/build /usr/share/nginx/html

@@ -6,4 +6,4 @@ docker run \
   -p 4000:4000 \
   -it \
   jekyll/jekyll:3.6.2 \
-  jekyll serve --watch --drafts --trace
+  jekyll serve --watch --drafts --unpublished --future  --incremental --trace
