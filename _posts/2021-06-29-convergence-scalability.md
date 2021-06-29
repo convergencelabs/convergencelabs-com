@@ -44,7 +44,7 @@ We have seen several use cases where a single Convergence Server running on a [t
 To deploy the [Convergence Omnibus Container](https://hub.docker.com/r/convergencelabs/convergence-omnibus) We generally recommend providing Convergence at least 2 modern CPU Cores and at least 4 GB of Memory. On AWS a [t2.medium](https://aws.amazon.com/ec2/instance-types/t2/) will run the Omnibus Container and the [Convergence Examples](https://github.com/convergencelabs/javascript-examples) reasonably well.
 
 ## Recommended Resources
-We generally recommend providing Convergence at least 2 modern CPU Cores and at least 8 GB of Memory. On AWS a (t2.large)[https://aws.amazon.com/ec2/instance-types/t2/] makes a good instance (but mind your burstable CPU credits).
+We generally recommend providing Convergence at least 2 modern CPU Cores and at least 8 GB of Memory. On AWS a [t2.large](https://aws.amazon.com/ec2/instance-types/t2/) makes a good instance (but mind your burstable CPU credits).
 
 # Conclusion
 While we are working to document some simple use cases as examples that show the realm of the possible. A cookie cutter answer is difficult to provide, and not likely applicable to your use case.
