@@ -40,8 +40,8 @@ The application's session behavior also makes a difference.  Does an applicaiton
 # Example Numbers
 We have seen several use cases where a single Convergence Server running on a [t2.large](https://aws.amazon.com/ec2/instance-types/t2/) (on [Amazon web Services](https://aws.amazon.com/)) was able to handle 400 concurrent users in a text editing based collaboration application.
 
-## Miinnum Resources
-To deploy the [Convergence Omnibus Container](https://hub.docker.com/r/convergencelabs/convergence-omnibus) We generally recommend providing Convergence at least 2 modern CPU Cores and at least 4 GB of Memory. On AWS a (t2.medium)[https://aws.amazon.com/ec2/instance-types/t2/] will run the Omnibus Container and the [Convergence Examples](https://github.com/convergencelabs/javascript-examples) reasonably well.
+## Minimum Resources
+To deploy the [Convergence Omnibus Container](https://hub.docker.com/r/convergencelabs/convergence-omnibus) We generally recommend providing Convergence at least 2 modern CPU Cores and at least 4 GB of Memory. On AWS a [t2.medium](https://aws.amazon.com/ec2/instance-types/t2/) will run the Omnibus Container and the [Convergence Examples](https://github.com/convergencelabs/javascript-examples) reasonably well.
 
 ## Recommended Resources
 We generally recommend providing Convergence at least 2 modern CPU Cores and at least 8 GB of Memory. On AWS a (t2.large)[https://aws.amazon.com/ec2/instance-types/t2/] makes a good instance (but mind your burstable CPU credits).
