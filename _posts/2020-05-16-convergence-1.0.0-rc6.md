@@ -6,7 +6,7 @@ date: 2020-05-16 09:00:00 -0700
 categories: [convergence]
 featured_image: /assets/images/blog/1-0-0-rc-6.jpg
 author: michael
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 The Convergence team is pleased to announce the availability of [1.0.0-rc.6](https://github.com/convergencelabs/convergence-project/wiki/CHANGELOG#100-rc5-may-16-2020). We re-prioritized much of our previously planned work for this release to focus on stability and quality improvements, as well as adding some features that rounded out existing functionality. We have been getting a lot of quality user engagement (thanks!) which has helped us prioritize our efforts. There were 38 [documented](https://github.com/convergencelabs/convergence-project/wiki/CHANGELOG#100-rc6-may-16-2020) bug fixes and enhancements in this release and almost as many items that we fixed / improved along the way.
 

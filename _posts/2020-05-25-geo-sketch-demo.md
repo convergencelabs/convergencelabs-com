@@ -6,7 +6,7 @@ date: 2020-06-04 12:00:00 -0700
 categories: [convergence, integrations]
 featured_image: /assets/images/blog/geo-sketch-demo.png
 author: michael
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 [Geographic Information Systems](https://en.wikipedia.org/wiki/Geographic_information_system) facilitate the visualization and analysis of geographically-related or geospatial information. Many industries such as oil and gas, supply chain management, economics, politics, and law enforcement rely heavily on GIS systems rendering geospatial information on maps for human analysis. Enabling real time collaboration in GIS systems can dramatically improve workflows across many of these industries. Imagine for example an emergency management response system focused on natural disaster recovery with multiple uses spread across regional / local operations centers as well as first responders on the ground. The ability to collaboratively plan and task resources in real time during an emergency can increase efficiency, reduce response times, and ultimately save lives.
 
