@@ -7,11 +7,18 @@
 
 body {
   position: relative;
+  min-height: 100vh;
 }
 
+.main-demo-hero {
+  min-height: 500px;
+  height: calc(100vh - 66px);
+}
 .hero-content {
   padding-right: 60px;
-
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   h1 {
     max-width: 600px;
@@ -20,10 +27,14 @@ body {
   h4 {
     display: inline-block;
     padding: 20px;
-    background: rgba(128, 128, 128, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     line-height: 1.6em;
     letter-spacing: normal;
     text-transform: none;
+    border-radius: 10px;
+    max-width: 768px;
+    color: #fff;
+    text-align: center;
 
     .cta {
       color: $link-color;

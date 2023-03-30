@@ -1,80 +1,6 @@
 <!-- ========== Footer ========== -->
 
 <footer class="footer-widgets">
-  <div class="container">
-    <div class="row section">
-
-      <!-- About Us -->
-      <div class="col-md-3 col-sm-6 mb-sm-100">
-        <div class="widget about-widget">
-          <h5 class="header-widget">About Us</h5>
-          <p>{{ site.description }}</p>
-
-          <ul class="social-links">
-            <li><a href="https://www.facebook.com/ConvergenceTeam"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/ConvergenceTeam"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/convergence-labs-inc/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://medium.com/convergence-labs"><i class="fa fa-medium"></i></a></li>
-            <li><a href="https://github.com/convergencelabs/"><i class="fa fa-github"></i></a></li>
-          </ul>
-        </div><!-- / .widget -->
-      </div><!-- / .col-md-3 -->
-
-      <div class="col-md-3 col-sm-6 mb-sm-100">
-        <div class="widget convergence-io-widget">
-          <h5 class="header-widget">convergence.io</h5>
-          <ul>
-            <li><a href="https://convergence.io">https://convergence.io</a></li>
-            <li><a href="https://convergence.io/demos/">Convergence Demos</a></li>
-            <li><a href="https://examples.convergence.io/">Convergence Examples</a></li>
-            <li><a href="https://convergence.io/learn/">Convergence Docs</a></li>
-          </ul>
-        </div><!-- / .widget -->
-      </div><!-- / .col-md-3 -->
-
-      <!-- Latest Blog Posts-->
-      <div class="col-md-3 col-sm-6 mb-sm-100">
-        <div class="widget recent-posts-footer-widget">
-          <h5 class="header-widget">Latest Blog Posts</h5>
-          {% for post in site.posts limit:3 %}
-          <div class="recent-post">
-            <a href="{{ post.url }}" class="post-date"><span>{{ post.date | date: "%b %d, %Y" }}</span></a> |
-            <a href="{{ post.url }}">{{post.title}}</a>
-          </div>
-          {% endfor %}
-        </div><!-- / .widget -->
-      </div><!-- / .col-md-3 -->
-
-      <!-- Newsletter -->
-      <div class="col-md-3 col-sm-6">
-        <div class="widget newsletter-widget">
-          <h5 class="header-widget">Newsletter</h5>
-
-          <form action="https://www.getdrip.com/forms/62786386/submissions" class="mc-form subscribe-form" method="post" id="newsletter-form" data-drip-embedded-form="62786386">
-            <div class="form-group">
-
-              <!-- First name -->
-              <input type="text" id="drip-firstName" name="fields[firstName]" placeholder="First name" required />
-
-              <!-- Email -->
-              <input type="email" id="drip-email" name="fields[email]" placeholder="Email address" required>
-
-              <!-- Send Button -->
-              <button type="submit" name="subscribe" class="g-recaptcha mc-send-btn" data-drip-attribute="sign-up-button" data-sitekey="6Lc_UqIUAAAAAEgsVLUho8CF1eUyDNWNZ0dmMOSr" data-callback="onNewsletterSubmit" data-badge="inline" data-theme="dark">
-                <i class="fa fa-send-o"></i> <span>Subscribe</span>
-              </button>
-            </div>
-
-            <!-- Ajax message -->
-            <div class="subscribe-result"></div>
-          </form>
-
-        </div><!-- / .widget -->
-      </div><!-- / .col-md-3 -->
-
-    </div><!-- / .row -->
-  </div><!-- / .container -->
-
 
   <!-- Copyright -->
   <div class="copyright">
@@ -82,7 +8,7 @@
       <div class="row">
 
         <div class="col-sm-6">
-          <small>&copy; 2016-2020 Convergence Labs, Inc.</small>
+          <small>&copy; 2016-2023 Convergence Labs, Inc.</small>
         </div>
 
         <div class="col-sm-6">
